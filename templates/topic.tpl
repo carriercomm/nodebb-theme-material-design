@@ -26,6 +26,15 @@
 						<div class="lv-item media" component="topic" data-tid="{tid}">
 							<!-- BEGIN posts -->
 							<!-- IMPORT partials/topic/post.tpl -->
+
+							<!-- IF !posts.index -->
+							<div class="timeline single" data-index="{posts.index}">
+								<div class="frame">
+								<!-- IMPORT partials/post_bar.tpl -->
+								</div>
+							</div>
+							<!-- ENDIF !posts.index -->
+
 							<!-- END posts -->
 						</div>
 					</div>
@@ -36,5 +45,9 @@
 	<!-- IF config.usePagination -->
 		<!-- IMPORT partials/paginator.tpl -->
 	<!-- ENDIF config.usePagination -->
+
+	<!-- IMPORT partials/move_thread_modal.tpl -->
+	<!-- IMPORT partials/fork_thread_modal.tpl -->
+	<!-- IMPORT partials/move_post_modal.tpl -->
 </div>
 <!-- IMPORT partials/variables/topic.tpl -->

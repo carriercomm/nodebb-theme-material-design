@@ -499,7 +499,7 @@ a:hover, a:active, a:focus, a:visited {
 
 @media (min-width:480px) {
 	.listview .lv-item .timeline-date .lv-actions {
-		top: 10%;
+		top: 20px;
 		right: -15px;
 	}
 	.listview .lv-item .timeline-date .lv-actions .moderator-tools>span {
@@ -507,10 +507,22 @@ a:hover, a:active, a:focus, a:visited {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.listview .lv-item .lv-actions.post-bar {
+		right: -5px;
+	}
 }
 
 .timeline.single .status {
 	font-size: 12px;
+}
+
+.timeline.single .lv-actions .reply-button {
+	vertical-align: top;
+}
+
+.timeline.single .lv-actions .post-count, .timeline.single .lv-actions .view-count {
+	text-align: center;
+	padding-right: 10px;
 }
 
 .timeline.single .actions>li>a>i {
@@ -521,4 +533,15 @@ a:hover, a:active, a:focus, a:visited {
 	margin-left: 10px;
 	font-weight: bold;
 	font-size: 14px;
+}
+
+#results .user-picture {
+	width: 30px;
+	height: 30px;
+}
+
+#results .lv-header-alt {
+	background-color: inherit;
+	padding: 12px;
+	border: none;
 }
