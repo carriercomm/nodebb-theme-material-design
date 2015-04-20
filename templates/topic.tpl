@@ -18,7 +18,6 @@
 									<i class="fa fa-eye-slash"></i>
 								</span>
 							</li>
-							
 						</ul>
 						</div>
 					</div>
@@ -28,14 +27,18 @@
 							<!-- IMPORT partials/topic/post.tpl -->
 
 							<!-- IF !posts.index -->
-							<div class="timeline single" data-index="{posts.index}">
+							<div class="post-bar timeline single" data-index="{posts.index}">
 								<div class="frame">
 								<!-- IMPORT partials/post_bar.tpl -->
 								</div>
 							</div>
 							<!-- ENDIF !posts.index -->
-
 							<!-- END posts -->
+							<div class="post-bar timeline single <!-- IF unreplied -->hidden<!-- ENDIF unreplied -->">
+								<div class="frame">
+								<!-- IMPORT partials/post_bar.tpl -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

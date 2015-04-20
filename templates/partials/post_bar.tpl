@@ -1,8 +1,9 @@
 <span class="tags">
 	<!-- BEGIN tags -->
-	<a href="{relative_path}/tags/{tags.value}">
-	<span class="tag-item" data-tag="{tags.value}" style="<!-- IF tags.color -->color: {tags.color};<!-- ENDIF tags.color --><!-- IF tags.bgColor -->background-color: {tags.bgColor};<!-- ENDIF tags.bgColor -->">{tags.value}</span>
-	<span class="tag-topic-count">{tags.score}</span></a>
+	<div class="pull-left tag-container">
+		<a href="{relative_path}/tags/{tags.value}">
+		<span class="tag-item" data-tag="{tags.value}" style="<!-- IF tags.color -->color: {tags.color};<!-- ENDIF tags.color --><!-- IF tags.bgColor -->background-color: {tags.bgColor};<!-- ENDIF tags.bgColor -->">{tags.value}</span><span class="tag-topic-count">{tags.score}</span></a>
+	</div>
 	<!-- END tags -->
 </span>
 
@@ -21,6 +22,8 @@
 	</li>
 
 	<!-- IMPORT partials/topic/reply-button.tpl -->
+
+	<!-- IMPORT partials/thread_tools.tpl -->
 
 </div>
 

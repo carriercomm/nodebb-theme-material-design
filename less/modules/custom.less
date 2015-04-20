@@ -16,7 +16,6 @@ a:hover, a:active, a:focus, a:visited {
 }
 
 .lv-actions>ul {
-	list-style:none;
 	font-size:14px
 }
 
@@ -87,10 +86,6 @@ a:hover, a:active, a:focus, a:visited {
 	margin-bottom: 10px;
 }
 
-.account-username-box li {
-	list-style: none;
-}
-
 .card.profile-view {
 	margin-top: 70px;
 }
@@ -109,10 +104,6 @@ a:hover, a:active, a:focus, a:visited {
 
 .status.offline {
 	color: gray;
-}
-
-.card-body ul {
-	list-style: none;
 }
 
 .topic .topic-title {
@@ -148,7 +139,6 @@ a:hover, a:active, a:focus, a:visited {
 }
 
 .groups.list .members {
-	list-style: none;
 	padding-left: 0;
 	list-style-type: none;
 }
@@ -203,10 +193,6 @@ a:hover, a:active, a:focus, a:visited {
   position: fixed;
   width: 300px;
   z-index: 10002;
-}
-
-#chat-list ul {
-	list-style: none;
 }
 
 .user-picture {
@@ -520,6 +506,11 @@ a:hover, a:active, a:focus, a:visited {
 	vertical-align: top;
 }
 
+.timeline.single .lv-actions .thread-tools {
+	vertical-align: top;
+	padding: 5px 5px;
+}
+
 .timeline.single .lv-actions .post-count, .timeline.single .lv-actions .view-count {
 	text-align: center;
 	padding-right: 10px;
@@ -564,4 +555,17 @@ a:hover, a:active, a:focus, a:visited {
   background-image: -moz-linear-gradient(top, rgba(255,255,255,0), white);
   background-image: -ms-linear-gradient(top, transparent, white);
   background-image: -o-linear-gradient(top, transparent, white);
+}
+
+.topic .post-bar.timeline.single {
+	padding-bottom: 20px;
+}
+
+.topic .post-bar.timeline.single .frame {
+	margin-left: 50px;
+	width: ~"calc(100% - 50px)";
+}
+
+.topic .tags .tag-container {
+	font-size: 13px;
 }
