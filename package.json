@@ -1,6 +1,9 @@
 {
   "name": "nodebb-theme-material-design",
   "version": "0.0.1",
+  "nbbpm": {
+    "compatibility": "^0.7.0"
+  },
   "description": "Material Design theme for NodeBB",
   "main": "theme.less",
   "repository": {
