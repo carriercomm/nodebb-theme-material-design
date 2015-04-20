@@ -2,16 +2,16 @@
     <div class="ms-menu">   
         <div class="ms-block">
 
-            <div class="panel-group" id="chats" role="tablist" aria-multiselectable="true">
+            <div class="panel-group" aria-multiselectable="true">
                 <div class="panel panel-collapse">
-                    <div class="panel-heading" role="tab">
+                    <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#chats" href="#recent-chats" aria-expanded="true">
+                            <a data-toggle="collapse" data-target=".recent-chats" aria-expanded="true">
                                 [[modules:chat.recent-chats]]
                             </a>
                         </h4>
                     </div>
-                    <div id="recent-chats" class="collapse in" role="tabpanel">
+                    <div class="recent-chats collapse in">
                         <div class="panel-body">
                             <div class="chats-list listview lv-user">                                
                                 <!-- BEGIN chats -->
@@ -29,14 +29,14 @@
                     </div>
                 </div>
                 <div class="panel panel-collapse">
-                    <div class="panel-heading" role="tab">
+                    <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#chats" href="#contacts" aria-expanded="false">
+                            <a data-toggle="collapse" data-target=".contacts" aria-expanded="false">
                                 [[modules:chat.contacts]]
                             </a>
                         </h4>
                     </div>
-                    <div id="contacts" class="collapse" role="tabpanel">
+                    <div class="contacts collapse">
                         <div class="panel-body">
                             <div class="chats-list listview lv-user"> 
                                 <!-- BEGIN contacts -->
@@ -59,6 +59,15 @@
     
     <div class="ms-body expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
         <div class="listview lv-message">
+            <div class="lv-header-alt bgm-white">
+                <div id="ms-menu-trigger">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </div>
+            </div>
             <!-- IF meta -->
             <ul class="lv-body chat-content">
                 <!-- IMPORT partials/chat_messages.tpl -->                                 
