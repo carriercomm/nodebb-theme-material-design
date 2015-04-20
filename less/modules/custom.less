@@ -244,14 +244,10 @@ a:hover, a:active, a:focus, a:visited {
 	width: 100px;
 }
 
-#notif-list {
-	padding: 10px;
-}
-
 #notif-list img {
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	width: 32px;
+	height: 32px;
 }
 
 #header #notif-list li .mark-read {
@@ -263,7 +259,11 @@ a:hover, a:active, a:focus, a:visited {
   content: "\f10c";
   padding: 4px 1rem;
   position: relative;
-  top: 1px;
+  top: 10px;
+}
+
+#header #notif-list li .mark-read:hover:after {
+  content: "\f111";
 }
 
 #header .notif-dropdown-link a {
