@@ -15,7 +15,7 @@
 		<strong>[[reset_password:invalid_email]]</strong>
 	</div>
 	<form onsubmit="return false;">
-		<div class="input-group">
+		<div class="form-group">
 			<div class="fg-line">
 				<input type="text" class="form-control input-block input-lg" placeholder="[[reset_password:enter_email_address]]" id="email" />
 			</div>
