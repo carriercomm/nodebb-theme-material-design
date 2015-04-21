@@ -67,23 +67,32 @@
                         <div class="line bottom"></div>
                     </div>
                 </div>
+                <!-- IF meta.username -->
+                <div class="lvh-label">
+                    <span>[[modules:chat.chatting_with]]: {meta.username}</span>
+                </div>
+                <!-- ELSE -->
+                <div class="lvh-label">
+                    <div class="alert alert-info">
+                        [[modules:chat.no-messages]]
+                    </div>
+                </div>
+                <!-- ENDIF meta.username -->
             </div>
-            <!-- IF meta -->
+            
             <ul class="lv-body chat-content">
+                <!-- IF meta -->
                 <!-- IMPORT partials/chat_messages.tpl -->                                 
                 <span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {meta.username}]]</span>
+                <!-- ENDIF meta -->
             </ul>
+            <!-- IF meta -->
             <div class="lv-footer ms-reply">
                 <textarea placeholder="[[modules:chat.placeholder]]" class="form-control chat-input" rows="1"></textarea>
                 <button type="button" data-action="send"><i class="fa fa-send"></i></button>
             </div>
-            <!-- ELSE -->
-            <ul class="lv-body chat-content">
-                <div class="alert alert-info">
-                    [[modules:chat.no-messages]]
-                </div>
-            </ul>
             <!-- ENDIF meta -->
+            
         </div>
     </div>
 </div>
