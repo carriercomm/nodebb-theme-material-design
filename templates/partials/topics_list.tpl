@@ -25,14 +25,28 @@
 				</a>
 			</div>
 
+			<!-- IF template.category -->
 			<small class="lv-small">
             	[[global:posts]] {topics.postcount} | [[global:views]] {topics.viewcount} | 
             	<!-- IF topics.user.userslug -->
-					[[global:posted_in_ago_by, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, {topics.user.username}]]
+				[[global:posted_ago_by, <span class="timeago" title="{topics.relativeTime}"></span>, <strong>{topics.user.username}</strong>]]
 				<!-- ELSE -->
-					[[global:posted_in_ago_by_guest, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
+				[[global:posted_ago_by_guest, <span class="timeago" title="{topics.relativeTime}"></span>]]
 				<!-- ENDIF topics.user.userslug -->
 			</small>
+			<!-- ENDIF template.category -->
+
+			<!-- IF !template.category -->
+			<small class="lv-small">
+				[[global:posts]] {topics.postcount} | [[global:views]] {topics.viewcount} | 
+				<!-- IF topics.user.userslug -->
+				[[global:posted_in_ago_by, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, <strong>{topics.user.username}</strong>]]
+				<!-- ELSE -->
+				[[global:posted_in_ago_by_guest, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
+				<!-- ENDIF topics.user.userslug -->
+			</small>
+			<!-- ENDIF !template.category -->
+			
 
 			<div class="lv-actions actions hidden-xs">
                 <ul>
