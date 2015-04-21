@@ -12,10 +12,12 @@
 					<span class="user-typing hide"><i class="fa fa-pencil"></i> <span class="text"></span></span>
 				</ul>
 				<div class="input-group">
-					<textarea id="chat-message-input" rows="1" placeholder="[[modules:chat.placeholder]]" name="chat-message" class="form-control"></textarea>
+					<div class="fg-line">
+						<textarea id="chat-message-input" rows="1" placeholder="[[modules:chat.placeholder]]" name="chat-message" class="form-control"></textarea>
+					</div>
 					<span class="input-group-btn">
-						<button id="chat-message-send-btn" class="btn btn-primary" href="#" type="button">[[modules:chat.send]]</button>
-						<button id="chat-close-btn" class="btn btn-warning" data-dismiss="modal" aria-hidden="true">[[global:close]]</button>
+						<button id="chat-message-send-btn" class="btn btn-link btn-primary" href="#" type="button">[[modules:chat.send]]</button>
+						<button id="chat-close-btn" class="btn btn-link btn-warning" data-dismiss="modal" aria-hidden="true">[[global:close]]</button>
 					</span>
 				</div>
 			</div>
