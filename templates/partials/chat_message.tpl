@@ -6,5 +6,6 @@
         <div class="ms-item">
             {messages.content}
         </div>
+        <small class="ms-date timeago" title="{messages.timestampISO}"></small>
     </div>
 </div>
