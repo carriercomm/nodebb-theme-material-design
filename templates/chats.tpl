@@ -69,7 +69,7 @@
                 </div>
                 <!-- IF meta.username -->
                 <div class="lvh-label">
-                    <span>[[modules:chat.chatting_with]]: {meta.username}</span>
+                    <span>[[modules:chat.chatting_with]] {meta.username}</span>
                 </div>
                 <!-- ELSE -->
                 <div class="lvh-label">
