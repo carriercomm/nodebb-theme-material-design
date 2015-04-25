@@ -136,7 +136,13 @@
     <aside id="sidebar">
         <div class="sidebar-inner">
             <div class="si-inner">
-                <ul class="main-menu">        
+                <ul class="main-menu">
+                    <li id="toggle-width">
+                        <div class="toggle-switch">
+                            <input id="tw-switch" type="checkbox" hidden="hidden">
+                            <label for="tw-switch" class="ts-helper"></label>
+                        </div>
+                    </li>        
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
