@@ -137,7 +137,7 @@
         <div class="sidebar-inner">
             <div class="si-inner">
                 <ul class="main-menu">
-                    <li id="toggle-width">
+                    <li id="toggle-width hidden-xs">
                         <div class="toggle-switch">
                             <input id="tw-switch" type="checkbox" hidden="hidden">
                             <label for="tw-switch" class="ts-helper"></label>
