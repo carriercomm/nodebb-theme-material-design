@@ -4,7 +4,7 @@
 		<div class="col-md-12">
 			<div class="card">
 				<div class="listview lv-bordered lv-lg">
-					<div class="lv-header-alt">
+					<div class="lv-header-alt" component="post/header" itemprop="name">
 						<div class="title">
 						<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span class="topic-title" component="topic/title">{title}</span>
 						<ul class="lv-actions actions hidden-xs">
@@ -53,4 +53,5 @@
 	<!-- IMPORT partials/fork_thread_modal.tpl -->
 	<!-- IMPORT partials/move_post_modal.tpl -->
 </div>
+<!-- IMPORT partials/noscript/paginator.tpl -->
 <!-- IMPORT partials/variables/topic.tpl -->

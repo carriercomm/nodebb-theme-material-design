@@ -26,7 +26,7 @@
 			</div>
 
 			<!-- IF template.category -->
-			<small class="lv-small">
+			<small>
             	[[global:posts]] {topics.postcount} | [[global:views]] {topics.viewcount} | 
             	<!-- IF topics.user.userslug -->
 				[[global:posted_ago_by, <span class="timeago" title="{topics.relativeTime}"></span>, <strong>{topics.user.username}</strong>]]
@@ -58,9 +58,9 @@
 			<div class="lv-actions actions hidden-xs">
                 <ul>
                     <!-- IF topics.unreplied -->
-				<li><a href="{relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a></li>
+				<li class="lv-small"><a href="{relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a></li>
 				<!-- ELSE -->
-				<li><a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">{topics.teaser.user.username}</a>
+				<li class="lv-small"><a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">{topics.teaser.user.username}</a>
 				<a href="{relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 					[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 				</a></li>
