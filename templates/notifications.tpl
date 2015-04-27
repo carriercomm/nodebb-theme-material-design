@@ -7,7 +7,7 @@
 
 	<ul class="list-material">
 		<!-- BEGIN notifications -->
-		<li class="has-action-left has-long-story">			
+		<li class="has-action-left has-long-story {notifications.readClass}" data-nid="{notifications.nid}">			
 			<div class="list-action-left">
 				<a href="{relative_path}/user/{notifications.user.userslug}"><img src="{notifications.image}" class="face-radius" alt=""></a>
 			</div>
