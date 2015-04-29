@@ -1,134 +1,50 @@
-.img-radius {
-  border-radius: 3px;
-}
-
-.face-radius {
-  border-radius: 50%;
-}
-
-.notifications-list {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background: #fff;
-}
-
-.notifications-list > li {
-  position: relative;
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.notifications-list > li .notification-left {
-  //position: absolute;
-  top: 50%;
-  left: 0;
-  padding: 0 16px;
-  width: 72px;
-  border-radius: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.notifications-list > li .notification-left img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.notifications-list > li:last-child .notification-content {
-  border-bottom-color: transparent;
-}
-
-.notifications-list > li .notification-content {
-  margin-left: 55px;
-}
-
-.notifications-list > li .notification-content {
-  padding-right: 80px;
-}
-
-.notifications-list > li .notification-content {
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 16px 16px 16px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.notifications-list > li .notification-content .title {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.notifications-list > li .notification-content .caption {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.notifications-list > li .notification-content .title,
-.notifications-list > li .notification-content .caption {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.notifications-list > li .notification-right {
-  position: absolute;
-  top: 0%;
-  right: 16px;
-  padding: 0;
-  width: 70px;
-  height: 100%;
-  text-align: right;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.notifications-list > li .notification-right i {
-  font-size: 20px;
-}
-
-.notifications-list > li .notification-right .top {
-  position: absolute;
-  top: 19px;
-  right: 0;
-}
-
-.notifications-list > li .notification-right .center {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.notifications-list > li .notification-right .bottom {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-}
-
 .notifications .notif-dropdown-link {
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(163,163,163,0.5);
 }
 
 .chats .notif-dropdown-link {
-  border-top: 1px solid #eee;
-}
-
-#notif-list.list-material > li .list-content {
-  padding: 10px 10px 10px 0;
-}
-
-#notif-list.list-material>li.has-action-left .list-content {
-  margin-left: 60px;
+  border-top: 1px solid rgba(163,163,163,0.5);
 }
 
 #notif-list, #chat-list {
   max-height: 250px;
   overflow-y: auto;
+}
+
+#notif-list {
+  padding: 0;
+  margin-top: 5px;
+}
+
+#notif-list>li {
+  padding: 0px 0px 10px 10px;
+  font-size: 12px;
+}
+
+#notif-list>li>a {
+  color: #333;
+}
+
+#notif-list>li .notif-img{
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+#header #notif-list li .mark-read {
+  color: #777;
+}
+
+#header #notif-list li .mark-read:after {
+  font-family: "FontAwesome";
+  content: "\f10c";
+  padding: 4px 1rem;
+  position: relative;
+  top: 0px;
+}
+
+#header #notif-list li .mark-read:hover:after {
+  content: "\f111";
 }
