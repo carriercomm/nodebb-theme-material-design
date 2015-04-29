@@ -22,9 +22,9 @@
 						<!-- ENDIF notifications.image -->
 					</div>
 					<div class="media-body">
+						<div class="lv-title">
 						<a href="{notifications.path}">{notifications.bodyShort}</a>
-					</div>
-					<div class="lv-actions actions">
+						</div>
 						<small class="timeago" title="{notifications.datetimeISO}"></small>
 					</div>
 		    	</div>

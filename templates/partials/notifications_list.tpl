@@ -7,10 +7,10 @@
 <li class="{notifications.readClass}" data-nid="{notifications.nid}">
 	<!-- IF notifications.image -->
 	<!-- IF notifications.from -->
-	<a href="{relative_path}/user/{notifications.user.userslug}"><img src="{notifications.image}" /></a>
+	<a href="{relative_path}/user/{notifications.user.userslug}"><img class="notif-img" src="{notifications.image}" /></a>
 	<!-- ENDIF notifications.from -->
 	<!-- ELSE -->
-	<img src="{notifications.image}"/>
+	<img class="notif-img" src="{notifications.image}"/>
 	<!-- ENDIF notifications.image -->
 
 	<div class="pull-right mark-read" aria-label="Mark Read"></div>

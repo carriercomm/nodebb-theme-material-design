@@ -46,7 +46,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg pull-right" aria-labelledby="notif_dropdown">
                     <li>
-                        <ul id="notif-list" class="list-material">
+                        <ul id="notif-list">
                             <li>
                                 <a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
                             </li>
