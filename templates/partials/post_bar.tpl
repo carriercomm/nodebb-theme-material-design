@@ -1,4 +1,4 @@
-<span class="tags">
+<span class="tags hidden-xs">
 	<!-- BEGIN tags -->
 	<div class="pull-left tag-container">
 		<a href="{relative_path}/tags/{tags.value}">
