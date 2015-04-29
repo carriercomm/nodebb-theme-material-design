@@ -41,7 +41,7 @@
             <p>{posts.content}</p>
         </div>
         <!-- IF posts.editor.username -->
-        <small class="pull-right">[[global:last_edited_by_ago, <strong><a href="{relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</small>
+        <small class="pull-right post-edit">[[global:last_edited_by_ago, <strong><a href="{relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</small>
         <!-- ENDIF posts.editor.username -->
     </div>
 </div>
