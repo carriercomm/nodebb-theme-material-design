@@ -52,7 +52,7 @@ a:hover, a:active, a:focus, a:visited {
 	padding-left: 20px;
 }
 
-/*@media screen and (min-width:768px) {
+/*@media screen and (min-width: @screen-sm-min) {
 	.account .card .card-body.card-padding {
 		padding-top:5px;
 		padding-left:26px;
@@ -60,7 +60,7 @@ a:hover, a:active, a:focus, a:visited {
 	}
 }*/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: @screen-sm-min) {
 	.account .card .card-header:not(.ch-alt) {
 		padding-top:15px;
 		padding-left: 26px;
@@ -147,7 +147,7 @@ a:hover, a:active, a:focus, a:visited {
 	display: inline;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: @screen-sm-min) {
 	.user-recent-posts {
 		margin-top: 18px;
 	}
@@ -272,7 +272,7 @@ a:hover, a:active, a:focus, a:visited {
 	color: #fff;
 }
 
-@media (max-width:767px) {
+@media (max-width: @screen-xs-max) {
 	.profile-view {
 		margin-top: 50px;
 	}
@@ -445,7 +445,7 @@ a:hover, a:active, a:focus, a:visited {
   	margin-right: -5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: @screen-xs-max) {
 	.listview .lv-title, .listview .lv-item .lv-small {
 		white-space: inherit;
 	}	
@@ -459,7 +459,7 @@ a:hover, a:active, a:focus, a:visited {
 	text-align: left;
 }
 
-@media (min-width:480px) {
+@media (min-width: @screen-xs-min) {
 	.listview .lv-item .timeline-date .lv-actions {
 		top: 20px;
 		right: -15px;
@@ -541,7 +541,7 @@ a:hover, a:active, a:focus, a:visited {
 	width: ~"calc(100% - 50px)";
 }
 
-@media (max-width: 767px) {
+@media (max-width: @screen-xs-max) {
 	.topic .post-bar.timeline.single .frame {
 		width: ~"calc(100% - 30px)";
 	}
@@ -715,7 +715,7 @@ a:hover, a:active, a:focus, a:visited {
 	margin-bottom: 0px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: @screen-xs-max) {
 	.lvh-label .alert {
 		margin-top: 5px;
 	}
@@ -727,25 +727,25 @@ a:hover, a:active, a:focus, a:visited {
 	text-transform: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @screen-sm-min) {
 	.notifications .listview.lv-lg .lv-item .media-body>a {
 		font-size: 14px;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: @screen-xs-max) {
 	.notifications .listview.lv-lg .lv-item .media-body>a {
 		font-size: 13px;
 	}
 }
 
-@media (min-width: 480px) {
+@media (min-width: @screen-xs-min) {
 	.notifications .listview.lv-lg .lv-item {
 		  padding: 10px 35px 10px 25px;
 	}	
 }
 
-@media (max-width: 767px) {
+@media (max-width: @screen-sm-max) {
 	.notifications .listview.lv-lg .lv-item {
 		  padding: 10px 35px 10px 25px;
 	}	
