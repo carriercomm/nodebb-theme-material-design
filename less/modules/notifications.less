@@ -1,43 +1,22 @@
-.notifications .notif-dropdown-link {
-    border-top: 1px solid rgba(163,163,163,0.5);
-    text-align: center;
-}
-
 .chats .notif-dropdown-link {
     border-top: 1px solid rgba(163,163,163,0.5);
     text-align: center;
 }
 
-#notif-list, #chat-list {
+#chat-list {
     max-height: 250px;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-#notif-list {
-    padding: 0;
-    margin-top: 10px;
-
-    >li {
-        padding: 0px 0px 10px 10px;
-        font-size: 12px;
-
-        >a {
-            color: #333;
-        }
-    }
-
-    .notif-img{
-        float: left;
-        margin-right: 5px;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-    }
+#notif-list .unread {
+    background-color: #dcf9ff;
 }
 
-#header #notif-list li .mark-read {
+#header #notif-list a .mark-read {
     color: #777;
+    margin-right: -5px;
+    padding-left: 0px;
 
     &:after {
         font-family: "FontAwesome";
@@ -49,5 +28,23 @@
 
     &:hover:after {
         content: "\f111";
+    }
+}
+
+.notifications .relTime {
+    color: #555;
+}
+
+.notifications .listview .lv-item .lv-small {
+    color: #333;
+    white-space: normal;
+}
+
+.notifications .listview .lv-footer {
+    margin-top: 10px;
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }

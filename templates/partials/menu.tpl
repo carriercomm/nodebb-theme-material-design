@@ -40,22 +40,27 @@
             <!-- ENDIF searchEnabled -->
 			
 			<!-- IF loggedIn -->
-            <li class="notifications dropdown text-center">
+            <li class="notifications dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
                     <i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-lg pull-right" aria-labelledby="notif_dropdown">
-                    <li>
-                        <ul id="notif-list">
-                            <li>
-                                <a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
-                    <li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
-                </ul>
+                <div class="dropdown-menu dropdown-menu-lg pull-right">
+                    <div class="listview">
+                        <div class="lv-header">
+                            [[notifications:title]]
+                        </div>
+                        <div class="lv-body c-overflow" id="notif-list">
+                            <a href="#" class="lv-item"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+                        </div>
+                        <div class="lv-footer">
+                        <a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a>
+                        <hr />
+                        <a href="{relative_path}/notifications">[[notifications:see_all]]</a>
+                        </div>
+                    </div>
+                </div>
             </li>
+
 
             <!-- IF !disableChat -->
             <li class="chats dropdown">

@@ -67,6 +67,13 @@
 						</div>
 					</div>
 
+					<div class="form-group">
+						<div class="fg-line">
+							<label>[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
+							<textarea class="form-control" id="inputAboutMe" rows="5">{aboutme}</textarea>
+						</div>
+					</div>
+
 					<!-- IF !disableSignatures -->
 					<div class="form-group">
 						<div class="fg-line">

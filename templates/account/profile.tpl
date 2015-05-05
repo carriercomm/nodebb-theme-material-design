@@ -18,6 +18,18 @@
  							<a id="follow-btn" href="#" class="btn btn-success btn-sm <!-- IF isFollowing -->hide<!-- ENDIF isFollowing -->">[[user:follow]]</a>
  							<a id="unfollow-btn" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
 							<!-- ENDIF !isSelf -->
+
+							<!-- IF banned -->
+							<div class="text-center">
+								<span class="label label-danger">[[user:banned]]</span>
+							</div>
+							<!-- ENDIF banned -->
+							<!-- IF aboutme -->
+							<hr/>
+							<div component="aboutme" class="text-center">
+							{aboutme}
+							</div>
+							<!-- ENDIF aboutme -->
                     </div>
                     
                     <ul class="pv-follow">

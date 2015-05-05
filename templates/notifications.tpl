@@ -11,7 +11,7 @@
 		<div class="listview lv-bordered lv-lg">
 			<div class="lv-body">
 				<!-- BEGIN notifications -->
-				<div class="lv-item media {notifications.readClass}" data-nid="{notifications.nid}">
+				<div class="lv-item media {notifications.readClass}" data-nid="{notifications.nid}" component="notifications/item">
 			    	<div class="pull-left">
 			    		<!-- IF notifications.image -->
 						<!-- IF notifications.from -->
