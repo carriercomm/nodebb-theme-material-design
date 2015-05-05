@@ -17,34 +17,13 @@
     z-index: 5;
     opacity: 0;
     filter: alpha(opacity=0);
-}
 
-#chat.toggled {
-    -webkit-transform: translate3d(~"calc(100vw - 260px)", 0, 0);
-    transform: translate3d(calc(100vw - 260px), 0, 0);
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-#chat .chat-search {
-    padding: 20px 20px 15px;
-}
-
-#chat .chat-search .form-control {
-	background-repeat:no-repeat;
-	background-position:left center;
-	padding-left:30px;
-	-webkit-transition:all;
-	-moz-transition:all;
-	-o-transition:all;
-	transition:all;
-	-webkit-transition-duration:300ms;
-	transition-duration:300ms;
-}
-
-#chat .chat-search .form-control:focus {
-	background-position:right center;
-	padding:0 30px 0 0;
+    &.toggled {
+        -webkit-transform: translate3d(~"calc(100vw - 260px)", 0, 0);
+        transform: translate3d(calc(100vw - 260px), 0, 0);
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
 }
 
 [class*=chat-status] {

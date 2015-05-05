@@ -1,31 +1,24 @@
 .media {
-	overflow:visible
-}
+	overflow:visible;
 
-.media:before,.media:after {
-	content:" ";
-	display:table
-}
+	&:before {
+		content:" ";
+		display:table;
+	}
 
-.media:after {
-	clear:both
-}
+	&:after {
+		content:" ";
+		display:table;
+		clear:both;
+	}
 
-.media:before, .media:after {
-	content:" ";
-	display:table
-}
+	>.pull-left {
+		padding-right:15px
+	}
 
-.media:after {
-	clear:both
-}
-
-.media>.pull-left {
-	padding-right:15px
-}
-
-.media>.pull-right {
-	padding-left:15px
+	>.pull-right {
+		padding-left:15px
+	}
 }
 
 .media-heading {

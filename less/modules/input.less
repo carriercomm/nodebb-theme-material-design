@@ -10,7 +10,7 @@ input:active, input:focus {
 	box-shadow:none!important;
 }
 
-//form-control
+
 .form-control {
 	box-shadow:none;
 	border:0;
@@ -20,27 +20,27 @@ input:active, input:focus {
 	appearance:none;
 	padding:0;
 	border-radius:0;
+
+	&:active {
+		border-bottom-color:#b4b4b4;
+	}
+
+	&:focus {
+		border-bottom-color:#b4b4b4;
+		box-shadow:none;
+	}
+
+	&.auto-size {
+		padding-top:6px
+	}
 }
 
-.form-control:active, .form-control:focus {
-	border-bottom-color:#b4b4b4
-}
-
-.form-control:focus {
-	box-shadow:none
-}
-
-.form-control.auto-size {
-	padding-top:6px
-}
 
 .form-group .fg-line label {
 	font-weight: normal;
 	font-size: 14px;
 }
 
-
-//input-group-addon
 
 .input-group-addon {
 	//border-width:0 0 1px;
@@ -50,63 +50,78 @@ input:active, input:focus {
 	line-height:2;
 }
 
-.input-group .input-group-addon {
-	vertical-align:bottom;
-	padding:0
+.input-group {
+	.input-group-addon {
+		vertical-align:bottom;
+		padding:0;
+
+		.md {
+			line-height:100%;
+		}
+	}
+
+	&:not(.input-group-lg):not(.input-group-sm) {
+		.input-group-addon {
+			&.last {
+				padding-left:10px;
+			}
+
+			.md {
+				font-size:23px;
+			}
+		}
+	}
+
+	&.input-group-lg {
+		.input-group-addon {
+			&:not(.last) {
+				padding-right:15px;
+			}
+
+			&.last {
+				padding-left:15px;
+			}
+
+			.md {
+				font-size:30px;
+			}
+		}
+	}
+
+	&.input-group-sm {
+		.input-group-addon {
+			&:not(.last) {
+				padding-right:5px;
+			}
+
+			&.last {
+				padding-left:5px;
+			}
+
+			.md {
+				font-size:18px;
+			}
+		}
+	}
+
+	>[class*=col-] {
+		padding:0;
+	}
+
+	.fg-line {
+		padding:0 10px;
+
+		&:after {
+			left:10px;
+		}
+
+		&.fg-toggled:after {
+			margin-left: 10px;
+			width:~"calc(100% - 20px)";
+		}
+	}
 }
 
-.input-group .input-group-addon .md {
-	line-height:100%
-}
-
-.input-group:not(.input-group-lg):not(.input-group-sm) .input-group-addon.last {
-	padding-left:10px
-}
-
-.input-group:not(.input-group-lg):not(.input-group-sm) .input-group-addon .md {
-	font-size:23px
-}
-
-.input-group.input-group-lg .input-group-addon:not(.last) {
-	padding-right:15px
-}
-
-.input-group.input-group-lg .input-group-addon.last {
-	padding-left:15px
-}
-
-.input-group.input-group-lg .input-group-addon .md {
-	font-size:30px
-}
-
-.input-group.input-group-sm .input-group-addon:not(.last) {
-	padding-right:5px
-}
-
-.input-group.input-group-sm .input-group-addon.last {
-	padding-left:5px
-}
-
-.input-group.input-group-sm .input-group-addon .md {
-	font-size:18px
-}
-
-.input-group>[class*=col-] {
-	padding:0
-}
-
-.input-group .fg-line {
-	padding:0 10px
-}
-
-.input-group .fg-line:after {
-	left:10px
-}
-
-.input-group .fg-line.fg-toggled:after {
-	margin-left: 10px;
-	width:~"calc(100% - 20px)";
-}
 
 //fg-line
 html:not(.ie9) .select:not(.fg-line):before {
@@ -119,71 +134,72 @@ html:not(.ie9) .select.fg-line:before {
 
 .fg-line {
 	position:relative;
-	vertical-align:top
+	vertical-align:top;
+
+	&:not(.form-group) {
+		display:inline-block;
+		width:100%;
+	}
+
+	.form-control {
+		resize:none;
+
+		&:not(:disabled) {
+			color:#000;
+		}
+
+		&:disabled {
+			color:#9d9d9d;
+			background:0 0;
+		}
+	}
+
+	&:not(.disabled):after, &:not(.readonly):after {
+		position:absolute;
+		z-index:3;
+		bottom:0;
+		left:0;
+		height:2px;
+		width:0;
+		content:"";
+		-webkit-transition:all;
+		-moz-transition:all;
+		-o-transition:all;
+		transition:all;
+		-webkit-transition-duration:300ms;
+		transition-duration:300ms;
+	}
+
+	&:not([class*=has-]):after {
+		background:#2196f3;
+	}
+
+	&.input-toggled:after {
+		width:100%;
+	}
+
+	&.readonly .form-control {
+		color:#9d9d9d;
+		background:0 0;
+	}
+
+	&.fg-toggled:after {
+		width:100%;
+	}
+
+	&.has-success:after {
+		background:#4caf50;
+	}
+
+	&.has-warning:after {
+		background:#ffc107;
+	}
+
+	&.has-error:after {
+		background:#f44336;
+	}
 }
 
-.fg-line:not(.form-group) {
-	display:inline-block;
-	width:100%
-}
-
-.fg-line .form-control {
-	resize:none
-}
-
-.fg-line .form-control:not(:disabled) {
-	color:#000
-}
-
-.fg-line .form-control:disabled {
-	color:#9d9d9d;
-	background:0 0
-}
-
-.fg-line:not(.disabled):after,.fg-line:not(.readonly):after {
-	position:absolute;
-	z-index:3;
-	bottom:0;
-	left:0;
-	height:2px;
-	width:0;
-	content:"";
-	-webkit-transition:all;
-	-moz-transition:all;
-	-o-transition:all;
-	transition:all;
-	-webkit-transition-duration:300ms;
-	transition-duration:300ms
-}
-
-.fg-line:not([class*=has-]):after {
-	background:#2196f3
-}
-
-.fg-line.input-toggled:after {
-	width:100%
-}
-
-.fg-line.readonly .form-control {
-	color:#9d9d9d;
-	background:0 0
-}
-
-.fg-line.fg-toggled:after {
-	width:100%
-}
-
-.fg-line.has-success:after {
-	background:#4caf50
-}
-
-.fg-line.has-warning:after {
-	background:#ffc107
-}
-
-.fg-line.has-error:after {
-	background:#f44336
-}
 
 .has-success .fg-line:after {
 	background:#4caf50
@@ -201,55 +217,55 @@ html:not(.ie9) .select.fg-line:before {
 .fg-float {
 	margin-top:2px;
 	position:relative;
-}
 
-.fg-float .form-control {
-	position:relative;
-	background:0 0;
-	z-index:1;
-}
+	.form-control {
+		position:relative;
+		background:0 0;
+		z-index:1;
 
-.fg-float .form-control::-moz-placeholder {
-	color:#fff;
-	opacity:1;
-}
+		&::-moz-placeholder {
+			color:#fff;
+			opacity:1;
+		}
 
-.fg-float .form-control:-ms-input-placeholder {
-	color:#fff;
-}
+		&:-ms-input-placeholder {
+			color:#fff;
+		}
 
-.fg-float .form-control::-webkit-input-placeholder {
-	color:#fff;
-}
+		&::-webkit-input-placeholder {
+			color:#fff;
+		}
+	}
 
-.fg-float .fg-label {
-	-webkit-transition:all;
-	-moz-transition:all;
-	-o-transition:all;
-	transition:all;
-	-webkit-transition-duration:200ms;
-	transition-duration:200ms;
-	position:absolute;
-	top:10px;
-	font-weight:400;
-	color:#959595;
-	pointer-events:none;
-	z-index:0;
-	left:0;
-	margin-left:25px;
-}
+	.fg-label {
+		-webkit-transition:all;
+		-moz-transition:all;
+		-o-transition:all;
+		transition:all;
+		-webkit-transition-duration:200ms;
+		transition-duration:200ms;
+		position:absolute;
+		top:10px;
+		font-weight:400;
+		color:#959595;
+		pointer-events:none;
+		z-index:0;
+		left:0;
+		margin-left:25px;
+	}
 
-.fg-float .input-lg+.fg-label {
-	font-size:17px;
-}
+	.input-lg+.fg-label {
+		font-size:17px;
+	}
 
-.fg-float .input-sm+.fg-label {
-	font-size:11px;
-}
+	.input-sm+.fg-label {
+		font-size:11px;
+	}
 
-.fg-float .fg-toggled+.fg-label {
-	top:-15px;
-	font-size:11px;
+	.fg-toggled+.fg-label {
+		top:-15px;
+		font-size:11px;
+	}
 }
 
 
