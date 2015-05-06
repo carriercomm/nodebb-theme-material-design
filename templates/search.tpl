@@ -174,6 +174,7 @@
 
 			<!-- BEGIN posts -->
 			<div class="card">
+			<div class="card-body card-padding">
 				<div class="listview">
 					<div class="lv-header-alt">
 					<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
@@ -200,6 +201,7 @@
 					</div>
 					</div>
 				</div>
+			</div>
 			</div>
 			<!-- END posts -->
 
