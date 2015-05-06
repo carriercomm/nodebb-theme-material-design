@@ -67,16 +67,16 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="chat_dropdown">
                     <i component="chat/icon" class="fa fa-comment-o fa-fw"></i>
                 </a>
-                <ul class="dropdown-menu pull-right" aria-labelledby="chat_dropdown">
-                    <li>
-                        <ul id="chat-list">
-                            <li>
-                                <a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="notif-dropdown-link"><a href="{relative_path}/chats">[[modules:chat.see_all]]</a></li>
-                </ul>
+                <div class="dropdown-menu pull-right" aria-labelledby="chat_dropdown">
+                    <div class="listview">
+                        <div class="lv-body c-overflow" id="chat-list">
+                            <a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a> 
+                        </div>
+                        <div class="lv-footer">
+                            <a href="{relative_path}/chats">[[modules:chat.see_all]]</a>
+                        </div>
+                    </div>
+                </div>
             </li>
             
             <!-- ENDIF !disableChat -->

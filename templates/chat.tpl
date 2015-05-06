@@ -1,4 +1,3 @@
-
 <div id="chat-modal" class="chat-modal hide" tabindex="-1" role="dialog" aria-labelledby="Chat" aria-hidden="true" data-backdrop="none">
 	<div class="modal-dialog">
 		<div class="modal-content listview lv-message">
