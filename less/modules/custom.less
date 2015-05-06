@@ -494,7 +494,7 @@ a:hover, a:active, a:focus, a:visited {
 
 #results .lv-header-alt {
 	background-color: inherit;
-	padding: 12px;
+	padding: 0px;
 	border: none;
 }
 
@@ -767,8 +767,12 @@ a:hover, a:active, a:focus, a:visited {
 @media screen and (min-width: @screen-sm-min) {
 	.search #results .card .card-body.card-padding {
 		padding-bottom: 0px;
-		padding-top: 0px;
+		padding-top: 10px;
 	}
+}
+
+.search #results .listview .lv-item.media {
+		padding: 0px;
 }
 
 
