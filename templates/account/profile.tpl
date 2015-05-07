@@ -134,12 +134,12 @@
 			<!-- ENDIF ips.length -->
 		</div>
 
-		<div class="col-md-7 user-recent-posts" data-nextstart="{nextStart}">
+		<div class="col-md-7 user-recent-posts">
 			<div class="card">
 				<div class="card-header ch-alt">
 					<i class="fa fa-edit"></i> [[global:recentposts]]
 				</div>
-				<div class="card-body card-padding">
+				<div class="card-body card-padding" component="posts" data-nextstart="{nextStart}">
 					<!-- IF !posts.length -->
 					<span>[[user:has_no_posts]]</span>
 					<!-- ENDIF !posts.length -->
