@@ -1,5 +1,8 @@
 <div class="category">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
+
+	<!-- IMPORT partials/category/subcategory.tpl -->
+	
 	<div class="card">
 		<div class="listview lv-bordered lv-lg">
 			<div class="lv-header-alt">
