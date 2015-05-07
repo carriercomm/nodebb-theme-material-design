@@ -13,6 +13,10 @@
 		</div>
 	</div>
 	<!-- ENDIF !topics.length -->
+
+	<!-- IF config.usePagination -->
+		<!-- IMPORT partials/paginator.tpl -->
+	<!-- ENDIF config.usePagination -->
 </div>
 
 <!-- IMPORT partials/variables/account.tpl -->

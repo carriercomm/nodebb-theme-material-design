@@ -8,26 +8,16 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-body card-padding user-favourite-posts" data-nextstart="{nextStart}">
-					<!-- BEGIN posts -->
-					<div class="timeline single">
-						<div class="frame">
-							<div class="timeline-badge" style="background-color:{posts.category.bgColor}; border-color:{posts.category.bgColor};">
-								<i class="fa {posts.category.icon}"></i>
-							</div>
-							<span class="timeline-date">[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
-							<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a></span>
-							<div class="timeline-content">
-								<p>{posts.content}</p>
-							</div>
-						</div>
-					</div>
-					<!-- END posts -->
-				</div>
+				<!-- IMPORT partials/posts_list.tpl -->
 			</div>
 		</div>
 	</div>
 	<!-- ENDIF !posts.length -->
+
+	<!-- IF config.usePagination -->
+		<!-- IMPORT partials/paginator.tpl -->
+	<!-- ENDIF config.usePagination -->
+	
 </div>
 
 <!-- IMPORT partials/variables/account.tpl -->
