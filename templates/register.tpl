@@ -26,7 +26,7 @@
         <div class="input-group m-b-20 fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
             <div class="fg-line">
-                <input class="form-control" type="text" name="username" id="username" autocorrect="off" autocapitalize="off" />
+                <input class="form-control" type="text" name="username" id="username" autocorrect="off" autocapitalize="off" autocomplete="off" />
             </div>
             <label class="fg-label">[[register:username_placeholder]]</label>
             <span class="input-group-addon">
