@@ -46,9 +46,13 @@
                 &nbsp; <a id="reset-link" href="{relative_path}/reset">[[login:forgot_password]]</a>
                 <!-- ENDIF showResetLink -->
             </div>
-            
+            <!-- IF alternate_logins -->
+            <div class="lc-options">
+                <!-- BEGIN authentication -->
+                <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
+                <!-- END authentication -->
+            </div>
+            <!-- ENDIF alternate_logins -->
         </div>
-        
-    </form>    
-        
+    </form>
 </div>
