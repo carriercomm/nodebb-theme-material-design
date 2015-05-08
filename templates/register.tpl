@@ -5,13 +5,13 @@
 </style>
 
 <div class="login-content">
-    <form class="form-horizontal" role="form" action="{relative_path}/register" method="post">
     <div class="lc-block toggled" id="l-register">
         <div class="alert alert-danger" id="register-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>[[error:registration-error]]</strong>
             <p>{error}</p>
         </div>
+        <form class="form-horizontal" role="form" action="{relative_path}/register" method="post">
         <div class="input-group m-b-20 fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
             <div class="fg-line">
@@ -69,6 +69,16 @@
         <!-- ENDIF termsOfUse -->
         <button class="btn btn-primary btn-lg btn-block" id="register" type="submit">[[register:register_now_button]]</button>
         <input id="referrer" type="hidden" name="referrer" value="" />
+        </form>
     </div>
-    </form>
+
+    <!-- IF alternate_logins -->
+    <div class="lc-options">
+        <ul class="alternate-auth">
+        <!-- BEGIN authentication -->
+        <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
+        <!-- END authentication -->
+        </ul>
+    </div>
+    <!-- ENDIF alternate_logins -->
 </div>

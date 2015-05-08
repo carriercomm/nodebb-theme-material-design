@@ -48,9 +48,11 @@
             </div>
             <!-- IF alternate_logins -->
             <div class="lc-options">
+                <ul class="alternate-auth">
                 <!-- BEGIN authentication -->
                 <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
                 <!-- END authentication -->
+                </ul>
             </div>
             <!-- ENDIF alternate_logins -->
         </div>
