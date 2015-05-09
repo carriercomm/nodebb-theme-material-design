@@ -782,3 +782,36 @@ a:hover, a:active, a:focus, a:visited {
 	height:128px;
 	border-radius: 50%;
 }
+
+.lv-item.media:not(.right) .media-body .ms-item:after {
+    content: "";
+  	display: block;
+  	position: absolute;
+  	width: 0;
+  	height: 0;
+  	left: 50px;
+  	top: 8px;
+  	border-top: 6px solid transparent;
+  	border-bottom: 6px solid transparent;
+  	border-right: 6px solid #00bcd4;
+}
+
+.lv-item.media.right .media-body .ms-item:after {
+	content: "";
+  	display: block;
+  	position: absolute;
+  	left: auto;
+  	right: 50px;
+  	top: 8px;
+  	border-top: 6px solid transparent;
+  	border-bottom: 6px solid transparent;
+  	border-left: 6px solid #eee;
+}
+
+#messages-main .lv-item.media:not(.right) .media-body .ms-item:after {
+ 	left: 65px;
+}
+
+#messages-main .lv-item.media.right .media-body .ms-item:after {
+ 	right: 65px;
+}
