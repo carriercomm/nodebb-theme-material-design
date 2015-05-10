@@ -61,7 +61,6 @@
                 </div>
             </li>
 
-
             <!-- IF !disableChat -->
             <li class="chats dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="chat_dropdown">

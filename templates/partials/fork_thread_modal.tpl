@@ -15,8 +15,8 @@
 			</div>
 
 			<div class="modal-footer">
-				<button type="button" class="btn btn-link btn-default" data-dismiss="modal" id="fork_thread_cancel">[[global:buttons.close]]</button>
-				<button type="button" class="btn btn-link btn-primary" id="fork_thread_commit" disabled>[[topic:confirm_fork]]</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal" id="fork_thread_cancel">[[global:buttons.close]]</button>
+				<button type="button" class="btn btn-primary" id="fork_thread_commit" disabled>[[topic:confirm_fork]]</button>
 			</div>
 		</div>
 	</div>

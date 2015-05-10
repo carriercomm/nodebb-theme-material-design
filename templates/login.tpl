@@ -12,7 +12,7 @@
                 <strong>[[login:failed_login_attempt]]</strong>
                 <p>{error}</p>
             </div>
-            <div class="input-group m-b-20 fg-float">
+            <div class="input-group fg-float">
                 <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
                 <div class="fg-line">
                     <input class="form-control" type="text" name="username" id="username" autocorrect="off" autocapitalize="off" />
@@ -20,7 +20,7 @@
                 <label class="fg-label">{allowLoginWith}</label>
             </div>
             
-            <div class="input-group m-b-20 fg-float">
+            <div class="input-group fg-float">
                 <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
                 <div class="fg-line">
                     <input class="form-control" type="password" name="password" id="password" />

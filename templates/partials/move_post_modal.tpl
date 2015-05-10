@@ -13,8 +13,8 @@
 			</div>
 
 			<div class="modal-footer">
-				<button type="button" class="btn btn-link btn-default" data-dismiss="modal" id="move_post_cancel">[[global:buttons.close]]</button>
-				<button type="button" class="btn btn-link btn-primary" id="move_post_commit" disabled>[[topic:confirm_move]]</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal" id="move_post_cancel">[[global:buttons.close]]</button>
+				<button type="button" class="btn btn-primary" id="move_post_commit" disabled>[[topic:confirm_move]]</button>
 			</div>
 		</div>
 	</div>

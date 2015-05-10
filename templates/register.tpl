@@ -12,7 +12,7 @@
             <p>{error}</p>
         </div>
         <form class="form-horizontal" role="form" action="{relative_path}/register" method="post">
-        <div class="input-group m-b-20 fg-float">
+        <div class="input-group fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
             <div class="fg-line">
                 <input class="form-control" type="text" name="email" id="email" autocorrect="off" autocapitalize="off" />
@@ -23,7 +23,7 @@
             </span>
         </div>
 
-        <div class="input-group m-b-20 fg-float">
+        <div class="input-group fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
             <div class="fg-line">
                 <input class="form-control" type="text" name="username" id="username" autocorrect="off" autocapitalize="off" autocomplete="off" />
@@ -34,7 +34,7 @@
             </span>
         </div>
         
-        <div class="input-group m-b-20 fg-float">
+        <div class="input-group fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
             <div class="fg-line">
                 <input class="form-control" type="password" name="password" id="password" />
@@ -45,7 +45,7 @@
             </span>
         </div>
         
-        <div class="input-group m-b-20 fg-float">
+        <div class="input-group fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
             <div class="fg-line">
                 <input class="form-control" type="password" name="password-confirm" id="password-confirm" />
