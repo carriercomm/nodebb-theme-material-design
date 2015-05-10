@@ -3,7 +3,7 @@
         <a href="/user/{messages.fromUser.userslug}"><img src="{messages.fromUser.picture}" alt=""></a>
     </div>
     <div class="media-body">
-        <div class="ms-item">
+        <div class="chat-item">
             {messages.content}
         </div>
         <small class="timeago" title="{messages.timestampISO}"></small>
