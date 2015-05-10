@@ -9,7 +9,6 @@
 				<span class="since-bar">
 				<a href="#" class="selected" data-since="recent">[[recent:title]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
 				<ul id="chat-content" class="lv-body">
-
 					<span class="user-typing hide"><i class="fa fa-pencil"></i> <span class="text"></span></span>
 				</ul>
 

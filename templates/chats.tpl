@@ -1,7 +1,7 @@
+
 <div class="card" id="messages-main">
     <div class="ms-menu">   
         <div class="ms-block">
-
             <div class="panel-group" aria-multiselectable="true">
                 <div class="panel panel-collapse">
                     <div class="panel-heading">
@@ -16,7 +16,7 @@
                             <div class="chats-list listview lv-user">                                
                                 <!-- BEGIN chats -->
                                 <li class="lv-item media<!-- IF chats.unread --> unread<!-- ENDIF chats.unread -->" data-username="{chats.username}" data-uid="{chats.uid}">
-                                    <div class="lv-avatar pull-left">
+                                    <div class="pull-left">
                                         <img src="{chats.picture}" alt="">
                                     </div>
                                     <div class="media-body">
@@ -41,7 +41,7 @@
                             <div class="chats-list listview lv-user"> 
                                 <!-- BEGIN contacts -->
                                 <li class="lv-item media" data-username="{contacts.username}" data-uid="{contacts.uid}">
-                                    <div class="lv-avatar pull-left">
+                                    <div class="pull-left">
                                         <img src="{contacts.picture}" alt="">
                                     </div>
                                     <div class="media-body">
@@ -67,17 +67,16 @@
                         <div class="line bottom"></div>
                     </div>
                 </div>
-                <!-- IF meta.username -->
-                <div class="lvh-label">
+                
+                <div class="chat-header">
+                    <!-- IF meta.username -->
                     <span>[[modules:chat.chatting_with]] {meta.username}</span>
-                </div>
-                <!-- ELSE -->
-                <div class="lvh-label">
+                    <!-- ELSE -->
                     <div class="alert alert-info">
                         [[modules:chat.no-messages]]
                     </div>
+                    <!-- ENDIF meta.username -->
                 </div>
-                <!-- ENDIF meta.username -->
             </div>
             
             <ul class="lv-body chat-content">

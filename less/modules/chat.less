@@ -12,10 +12,6 @@
 		clear:both;
 	}
 
-	.ms-block {
-		padding:10px 0px 0;
-	}
-
 	.ms-menu {
 		position:absolute;
 		left:0;
@@ -150,27 +146,8 @@
 	}
 }
 
-.lv-avatar {
-	width:35px;
-	height:35px;
-	border-radius:50%;
-	color:#FFF;
-	text-align:center;
-	line-height:34px;
-	font-size:15px;
-	margin-right:15px;
-	padding:0!important;
-	text-transform:uppercase;
-
-	>img {
-		width:35px;
-		height:35px;
-		border-radius:50%;
-		vertical-align:top;
-	}
-}
-
 .ms-item {
+	font-size: 14px;
 	padding:5px 10px 5px 10px;
 	border-radius:2px;
 	display:inline-block;
@@ -219,4 +196,57 @@
 			background:#f2f2f2;
 		}
 	}
+}
+
+.ms-block {
+	padding-top: 10px;
+	
+	.panel-group {
+		.panel-title {
+			text-align: center;
+		}
+
+		.panel-body {
+			background-color: #f2f2f2;
+		}
+
+		.panel+.panel {
+			margin-top: 0px;
+		}
+	}
+
+	.panel {
+		background-color: inherit;
+	}
+}
+
+.since-bar {
+	a {
+		padding: 0px 5px;
+	}
+}
+
+.chat-message img, .chats-list>li img{
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	vertical-align:top;
+}
+
+.recent-chats .panel-body {
+	padding: 0px;
+}
+
+.chat-header {
+	color: #818181;
+  	display: inline-block;
+  	margin: 0;
+  	font-size: 16px;
+  	font-weight: 400;
+  	vertical-align: middle;
+
+  	.alert {
+  		margin: 0px;
+  		padding: 15px;
+  	}
 }

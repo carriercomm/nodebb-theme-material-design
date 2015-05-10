@@ -4,8 +4,8 @@
     }
 </style>
 
-<div class="login-content">
-    <div class="lc-block toggled" id="l-register">
+<div class="register">
+    <div class="register-block">
         <div class="alert alert-danger" id="register-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>[[error:registration-error]]</strong>
@@ -64,8 +64,6 @@
                 [[register:agree_to_terms_of_use]]
             </label>
         </div>
-        <!-- ELSE -->
-        <div class="clearfix"></div>
         <!-- ENDIF termsOfUse -->
         <button class="btn btn-primary btn-lg btn-block" id="register" type="submit">[[register:register_now_button]]</button>
         <input id="referrer" type="hidden" name="referrer" value="" />
@@ -73,7 +71,7 @@
     </div>
 
     <!-- IF alternate_logins -->
-    <div class="lc-options">
+    <div class="register-options">
         <ul class="alternate-auth">
         <!-- BEGIN authentication -->
         <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>

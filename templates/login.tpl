@@ -4,9 +4,9 @@
     }
 </style>
 
-<div class="login-content">
+<div class="login">
     <form class="form-horizontal" role="form" method="post" target="login" id="login-form">
-        <div class="lc-block toggled" id="l-login">
+        <div class="login-block">
             <div class="alert alert-danger" id="login-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <strong>[[login:failed_login_attempt]]</strong>
@@ -38,7 +38,7 @@
             
             <button class="btn btn-primary btn-lg btn-block" id="login" type="submit">[[global:login]]</button>
 
-            <div class="lc-options">
+            <div class="login-options">
                 <!-- IF allowRegistration -->
                 <span>[[login:dont_have_account]] <a href="{relative_path}/register">[[register:register]]</a></span>
                 <!-- ENDIF allowRegistration -->
@@ -47,7 +47,7 @@
                 <!-- ENDIF showResetLink -->
             </div>
             <!-- IF alternate_logins -->
-            <div class="lc-options">
+            <div class="login-options">
                 <ul class="alternate-auth">
                 <!-- BEGIN authentication -->
                 <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
