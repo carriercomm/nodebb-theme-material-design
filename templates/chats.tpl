@@ -1,7 +1,7 @@
 
-<div class="card" id="messages-main">
-    <div class="ms-menu">   
-        <div class="ms-block">
+<div class="card" id="chat-main">
+    <div class="chat-menu">   
+        <div class="chat-block">
             <div class="panel-group" aria-multiselectable="true">
                 <div class="panel panel-collapse">
                     <div class="panel-heading">
@@ -57,10 +57,10 @@
         </div> 
     </div>
     
-    <div class="ms-body expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
+    <div class="chat-body expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
         <div class="listview lv-message">
             <div class="lv-header-alt bgm-white">
-                <div id="ms-menu-trigger">
+                <div id="chat-menu-trigger">
                     <div class="line-wrap">
                         <div class="line top"></div>
                         <div class="line center"></div>
