@@ -7,9 +7,11 @@
 			</div>
 			<div class="modal-body">
 				<div class="form-group">
-					<label for="title">Title</label>
-					<input id="fork-title" type="text" class="form-control" placeholder="Enter new thread title"><br/>
-					<label>[[topic:fork_topic_instruction]]</label> <br/>
+					<div class="fg-line">
+						<label for="title">Title</label>
+						<input id="fork-title" type="text" class="form-control" placeholder="Enter new thread title">
+					</div>
+					<small class="help-block">[[topic:fork_topic_instruction]]</small>
 					<span id="fork-pids"></span>
 				</div>
 			</div>

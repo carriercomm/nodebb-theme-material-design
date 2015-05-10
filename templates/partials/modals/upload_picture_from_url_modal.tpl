@@ -3,7 +3,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3>[[user:upload_picture]]</h3>
+				<h4>[[user:upload_picture]]</h4>
 			</div>
 			<div class="modal-body">
 				<div class="form-group">

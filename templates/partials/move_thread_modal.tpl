@@ -3,7 +3,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h3>[[topic:move_topic]]</h3>
+				<h4>[[topic:move_topic]]</h4>
 			</div>
 			<div class="modal-body">
 				<p id="categories-loading"><i class="fa fa-spin fa-refresh"></i> [[topic:load_categories]]</p>
