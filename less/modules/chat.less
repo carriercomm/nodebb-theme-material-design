@@ -62,6 +62,27 @@
 		}
 	}
 
+	.lv-message .lv-item {
+
+		&.right {
+			text-align:right;
+
+			.lv-avatar {
+				margin-right:0;
+				margin-left:15px;
+			}
+
+			.chat-item {
+				background:#eee;
+			}
+		}
+
+		&:not(.right) .chat-item {
+			background:#00BCD4;
+			color:#fff;
+		}
+	}
+
 	.chat-body {
 		@media (min-width: @screen-sm-min) {
 			padding-left:240px;
@@ -69,6 +90,35 @@
 
 		@media (max-width: @screen-xs-max) {
 			overflow:hidden;
+		}
+	}
+
+	.chat-reply {
+		box-shadow:0 -20px 20px -5px #fff;
+		position:relative;
+		margin:0!important;
+
+		textarea {
+			width:100%;
+			font-size:13px;
+			border:0;
+			padding:10px 8px;
+			resize:none;	
+		}
+		button {
+			position:absolute;
+			top:0;
+			right:0;
+			border:0;
+			height:100%;
+			width:60px;
+			font-size:25px;
+			background:#F5F5F5;
+			color:#2196f3;
+
+			&:hover {
+				background:#f2f2f2;
+			}
 		}
 	}
 
@@ -132,28 +182,6 @@
 	}
 }
 
-.lv-message .lv-item {
-	padding:20px;
-
-	&.right {
-		text-align:right;
-
-		.lv-avatar {
-			margin-right:0;
-			margin-left:15px;
-		}
-
-		.chat-item {
-			background:#eee;
-		}
-	}
-
-	&:not(.right) .chat-item {
-		background:#00BCD4;
-		color:#fff;
-	}
-}
-
 .chat-item {
 	font-size: 14px;
 	padding:5px 10px 5px 10px;
@@ -162,35 +190,6 @@
 
 	@media (min-width: @screen-sm-min) {
 		max-width:70%;
-	}
-}
-
-.ms-reply {
-	box-shadow:0 -20px 20px -5px #fff;
-	position:relative;
-	margin:0!important;
-
-	textarea {
-		width:100%;
-		font-size:13px;
-		border:0;
-		padding:10px 8px;
-		resize:none;	
-	}
-	button {
-		position:absolute;
-		top:0;
-		right:0;
-		border:0;
-		height:100%;
-		width:60px;
-		font-size:25px;
-		background:#F5F5F5;
-		color:#2196f3;
-
-		&:hover {
-			background:#f2f2f2;
-		}
 	}
 }
 
@@ -262,4 +261,30 @@
 .chat-modal .user-typing {
 	position: absolute;
 	bottom: 70px;
+}
+
+#chat-list {
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#chat-list {
+    padding: 10px 10px 0px 10px;
+}
+
+#chat-list li {
+    margin-bottom: 10px;
+}
+
+#chat-list img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.chats .listview .lv-footer {
+	margin-top: 0px;
+    min-height: inherit;
 }

@@ -86,7 +86,7 @@
                 <!-- ENDIF meta -->
             </ul>
             <!-- IF meta -->
-            <div class="lv-footer ms-reply">
+            <div class="lv-footer chat-reply">
                 <textarea placeholder="[[modules:chat.placeholder]]" class="form-control chat-input" rows="1"></textarea>
                 <button type="button" data-action="send"><i class="fa fa-send"></i></button>
             </div>
