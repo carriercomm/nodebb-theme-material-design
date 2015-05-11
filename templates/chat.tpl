@@ -19,7 +19,7 @@
 					<div class="input-group-btn">
 						<button id="chat-message-send-btn" class="btn btn-link btn-primary" href="#" type="button">[[modules:chat.send]]</button>
 						<button id="chat-close-btn" class="btn btn-link btn-warning" data-dismiss="modal" aria-hidden="true">[[global:close]]</button>
-					</span>
+					</div>
 				</div>
 			</div>
 		</div>
