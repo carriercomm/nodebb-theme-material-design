@@ -161,6 +161,16 @@
 			line-height:100%;
 		}
 	}
+
+	.recent-chats, .contacts {
+		.panel-body {
+			padding: 0px;
+		}
+	}
+
+	.since-bar {
+		margin-left: 20px;
+	}
 }
 
 #chat-menu-trigger {
@@ -240,10 +250,6 @@
 	vertical-align:top;
 }
 
-.recent-chats .panel-body {
-	padding: 0px;
-}
-
 .chat-header {
 	color: #818181;
   	display: inline-block;
@@ -267,21 +273,18 @@
     max-height: 250px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-#chat-list {
     padding: 10px 10px 0px 10px;
-}
 
-#chat-list li {
-    margin-bottom: 10px;
-}
+    li {
+    	margin-bottom: 10px;
+    }
 
-#chat-list img {
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
+    img {
+	    border-radius: 50%;
+	    width: 32px;
+	    height: 32px;
+	    margin-right: 10px;
+	}
 }
 
 .chats .listview .lv-footer {
