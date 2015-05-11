@@ -28,9 +28,7 @@
                 <form id="search-form" class="hidden-xs" role="search" method="GET" action="">
                     <div class="hide" id="search-fields">
                         <div class="form-group">
-                            <div class="fg-line">
-                                <input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
-                            </div>
+                            <input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
                         </div>
                         <button type="submit" class="btn btn-default hide">[[global:search]]</button>
                     </div>
