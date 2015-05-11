@@ -64,11 +64,6 @@
 		border-radius:50%;
 	}
 
-	.lv-img {
-		width:50px;
-		height:50px;
-	}
-
 	.lv-img-sm {
 		width:35px;
 		height:35px;
@@ -111,25 +106,20 @@
 			float:right;
 			position:relative;
 
-			>li>a {
-				margin:0 3px;
+			>li {
+				>a {
+					margin:0 3px;
+				}
+
+				>span {
+				  margin: 0 10px;
+				}
 			}
 		}
 
 		.title {
 			padding-left: 10px;
 		}
-	}
-
-	.lvh-label {
-		color:#818181;
-		display:inline-block;
-		margin:0;
-		font-size:16px;
-		font-weight:400;
-		padding:0 10px;
-		line-height:33px;
-		vertical-align:middle;
 	}
 
 	.lv-footer {
@@ -186,6 +176,7 @@
 			font-size:12px;
 			margin-top:5px;
 			margin-right:2px;
+			border-radius: 10px;
 
 			&:not(.info):not(.primary):not(.warning):not(.danger) {
 				border:1px solid #dedede;

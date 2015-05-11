@@ -185,6 +185,19 @@
 	.lv-item.media.right .media-body .chat-item:after {
 	  	right: 50px;
 	}
+
+	#chat-content {
+		height: 250px;
+	 	overflow-y: auto;
+		resize: none;
+		word-wrap: break-word;
+		padding: 0px;
+		margin-top: 10px;
+	}
+
+	.status {
+		font-size: 14px;
+	}
 }
 
 #chat-menu-trigger {
@@ -255,6 +268,10 @@
 	.media-body {
 		cursor: default;
 	}
+
+	p {
+		margin: 0;
+	}
 }
 
 .chat-message img, .chats-list>li img{
@@ -278,6 +295,18 @@
   	}
 }
 
+.chat-footer {
+	padding-top: 20px;
+	border-top: 1px solid #f0f0f0;
+}
+
+.expanded-chat .lv-message .chat-content {
+	overflow-y: auto;
+	resize: none;
+    word-wrap: break-word;
+    min-height: 200px;
+}
+
 #chat-list {
     max-height: 250px;
     overflow-x: hidden;
@@ -299,4 +328,8 @@
 .chats .listview .lv-footer {
 	margin-top: 0px;
     min-height: inherit;
+}
+
+.lv-message .chat-message.lv-item {
+	padding: 5px;
 }
