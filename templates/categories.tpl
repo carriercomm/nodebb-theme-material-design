@@ -8,7 +8,7 @@
                 	<!-- IF categories.link -->
 					<a href="{categories.link}" itemprop="url" target="_blank">
 					<!-- ELSE -->
-					<a href="{relative_path}/category/{categories.slug}" itemprop="url" style="color:{categories.bgColor};">
+					<a href="{config.relative_path}/category/{categories.slug}" itemprop="url" style="color:{categories.bgColor};">
 					<!-- ENDIF categories.link-->
 					{categories.name} <!-- IF categories.icon -->
 							<i class="fa {categories.icon} fa-fw"></i>
@@ -29,12 +29,12 @@
 				<!-- BEGIN posts -->				
 				<div component="category/posts" class="content">
 					<div class="pull-left hidden-xs">
-			        	<a href="{relative_path}/user/{categories.posts.user.userslug}">
+			        	<a href="{config.relative_path}/user/{categories.posts.user.userslug}">
 			            	<img class="user-picture" src="{categories.posts.user.picture}" title="{categories.posts.user.username}">
 			        	</a>
 			    	</div>
 					<div class="topic-content">
-						<a href="{relative_path}/topic/{categories.posts.topic.slug}">{categories.posts.topic.title}</a>
+						<a href="{config.relative_path}/topic/{categories.posts.topic.slug}">{categories.posts.topic.title}</a>
 					</div>
 				</div>
 				<!-- END posts -->
