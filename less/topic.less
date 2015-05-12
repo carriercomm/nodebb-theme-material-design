@@ -27,10 +27,20 @@
 		.lv-actions.actions, .timeline.single .lv-actions.actions {
 			z-index: inherit;
 		}
-	}
 
-	.tags .tag-container {
-		font-size: 13px;
+		.thread-tools.dropdown {
+			border-radius: 2px;
+		}
+
+		.btn.dropdown-toggle {
+			padding: 4px;
+		}
+
+		.tag-container {
+			border: 1px solid #dedede;
+			border-radius: 7px;
+		    font-size: 13px;
+		}
 	}
 }
 
@@ -71,4 +81,12 @@
 .tools-title {
 	margin-left: 10px;
 	font-size: 11px;
+}
+
+.votes {
+	.upvoted, .downvoted {
+		i {
+			color: #2196f3;
+		}
+	}
 }

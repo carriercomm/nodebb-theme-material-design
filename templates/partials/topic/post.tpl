@@ -7,7 +7,6 @@
             <i class="fa fa-comments-o"></i>
         </div>
         <span class="timeline-date">
-
             <i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
             <strong>
             <a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
@@ -24,12 +23,12 @@
                 <li class="votes">
                     <!-- IF !reputation:disabled -->
                     <a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
-                        <i class="fa fa-chevron-up"></i>
+                        <i class="fa fa-thumbs-o-up"></i>
                     </a>
                     <span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
                     <!-- IF !downvote:disabled -->
                     <a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
-                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-thumbs-o-down"></i>
                     </a>
                     <!-- ENDIF !downvote:disabled -->
                     <!-- ENDIF !reputation:disabled -->
@@ -42,7 +41,6 @@
         </div>
 
         <small component="post/editor" class="pull-right post-edit <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->">[[global:last_edited_by_ago, <strong><a href="{config.relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</small>
-
     </div>
 </div>
 
