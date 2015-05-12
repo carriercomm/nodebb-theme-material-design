@@ -11,7 +11,7 @@
             <strong>[[error:registration-error]]</strong>
             <p>{error}</p>
         </div>
-        <form class="form-horizontal" role="form" action="{relative_path}/register" method="post">
+        <form class="form-horizontal" role="form" action="{config.relative_path}/register" method="post">
         <div class="input-group fg-float">
             <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
             <div class="fg-line">
@@ -74,7 +74,7 @@
     <div class="register-options">
         <ul class="alternate-auth">
         <!-- BEGIN authentication -->
-        <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
+        <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{config.relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
         <!-- END authentication -->
         </ul>
     </div>

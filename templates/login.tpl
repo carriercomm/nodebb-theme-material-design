@@ -40,17 +40,17 @@
 
             <div class="login-options">
                 <!-- IF allowRegistration -->
-                <span>[[login:dont_have_account]] <a href="{relative_path}/register">[[register:register]]</a></span>
+                <span>[[login:dont_have_account]] <a href="{config.relative_path}/register">[[register:register]]</a></span>
                 <!-- ENDIF allowRegistration -->
                 <!-- IF showResetLink -->
-                &nbsp; <a id="reset-link" href="{relative_path}/reset">[[login:forgot_password]]</a>
+                &nbsp; <a id="reset-link" href="{config.relative_path}/reset">[[login:forgot_password]]</a>
                 <!-- ENDIF showResetLink -->
             </div>
             <!-- IF alternate_logins -->
             <div class="login-options">
                 <ul class="alternate-auth">
                 <!-- BEGIN authentication -->
-                <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
+                <li class="{authentication.name}"><a rel="nofollow" target="_top" href="{config.relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-2x"></i></a></li>
                 <!-- END authentication -->
                 </ul>
             </div>

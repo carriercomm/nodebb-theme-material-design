@@ -182,7 +182,7 @@
 						<div class="timeline-badge">
 							<i class="fa {posts.category.icon}"></i>
 						</div>
-						<span class="timeline-date">[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]</span>
+						<span class="timeline-date">[[global:posted_in_ago, <a href="{config.relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]</span>
 						<div class="timeline-content">
 							<p>{posts.content}</p>
 						</div>

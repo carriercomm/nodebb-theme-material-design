@@ -1,7 +1,7 @@
 <div class="unread">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
-	<a href="{relative_path}/unread">
+	<a href="{config.relative_path}/unread">
 		<div class="alert alert-warning hide" id="new-topics-alert"></div>
 	</a>
 

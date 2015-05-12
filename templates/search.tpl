@@ -177,7 +177,7 @@
 			<div class="card-body card-padding">
 				<div class="listview">
 					<div class="lv-header-alt">
-					<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
+					<a href="{config.relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
 						<h4>{posts.topic.title}</h4>
 					</a>
 					</div>
@@ -195,8 +195,8 @@
 					<div class="lv-footer">
 					<div class="lv-actions">
 						<li class="lv-small">
-							<a href="{relative_path}/user/{posts.user.userslug}"><img class="user-picture" title="{posts.user.username}" src="{posts.user.picture}"/></a>
-							[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
+							<a href="{config.relative_path}/user/{posts.user.userslug}"><img class="user-picture" title="{posts.user.username}" src="{posts.user.picture}"/></a>
+							[[global:posted_in_ago, <a href="{config.relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
 						</li>
 					</div>
 					</div>

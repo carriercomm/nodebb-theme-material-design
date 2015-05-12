@@ -5,8 +5,8 @@
 			<div class="timeline-badge" style="background-color:{posts.category.bgColor}; border-color:{posts.category.bgColor};">
 				<i class="fa {posts.category.icon}"></i>
 			</div>
-			<span class="timeline-date">[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
-			<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a></span>
+			<span class="timeline-date">[[global:posted_in_ago, <a href="{config.relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
+			<a href="{config.relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a></span>
 			<div class="timeline-content">
 				<p>{posts.content}</p>
 			</div>

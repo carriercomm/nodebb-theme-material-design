@@ -18,7 +18,7 @@
 			    			<!-- IF children.link -->
 							<a href="{children.link}" itemprop="url" target="_blank">
 							<!-- ELSE -->
-							<a href="{relative_path}/category/{children.slug}" itemprop="url">
+							<a href="{config.relative_path}/category/{children.slug}" itemprop="url">
 							<!-- ENDIF children.link -->
 							{children.name}
 							</a><br />

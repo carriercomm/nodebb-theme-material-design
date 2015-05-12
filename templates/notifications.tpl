@@ -15,7 +15,7 @@
 			    	<div class="pull-left">
 			    		<!-- IF notifications.image -->
 						<!-- IF notifications.from -->
-						<a href="{relative_path}/user/{notifications.user.userslug}"><img class="lv-img-sm" src="{notifications.image}" /></a>
+						<a href="{config.relative_path}/user/{notifications.user.userslug}"><img class="lv-img-sm" src="{notifications.image}" /></a>
 						<!-- ENDIF notifications.from -->
 						<!-- ELSE -->
 						<img class="lv-img-sm" src="{notifications.image}" />
