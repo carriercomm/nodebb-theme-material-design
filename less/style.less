@@ -44,6 +44,20 @@ ul, li {
 	margin-bottom: 5px;
 }
 
+#content {
+	-webkit-transition: opacity 150ms linear;
+	-moz-transition: opacity 150ms linear;
+	-ms-transition: opacity 150ms linear;
+	-o-transition: opacity 150ms linear;
+	transition: opacity 150ms linear;
+
+	&.ajaxifying {
+		-moz-opacity: 0;
+		opacity: 0;
+		-ms-filter:~"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+}
+
 .fade-out {
   position: absolute;
   top: 190px;
