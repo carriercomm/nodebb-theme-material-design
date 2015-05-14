@@ -27,7 +27,7 @@
 
 			<!-- IF template.category -->
 			<small>
-            	[[global:posts]] {topics.postcount} | [[global:views]] {topics.viewcount} | 
+            	[[global:posts]] <span class="human-readable-number" title="{topics.postcount}"></span> | [[global:views]] <span class="human-readable-number" title="{topics.viewcount}"></span> | 
             	<!-- IF topics.user.userslug -->
 				[[global:posted_ago_by, <span class="timeago" title="{topics.relativeTime}"></span>, <strong>{topics.user.username}</strong>]]
 				<!-- ELSE -->
