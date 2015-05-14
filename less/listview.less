@@ -220,12 +220,24 @@
 
 	&.lv-lg .lv-item {
 		@media (min-width: @screen-xs-min) {
-			padding:10px 25px 10px 25px;
+			padding:17px 35px 17px 25px;
 		}
 
 		@media (min-width: @screen-sm-max) {
-			padding:10px 25px 10px 25px;
+			padding:17px 35px 17px 20px;
 		}
+	}
+}
+
+@media (min-width: @screen-xs-min) {
+	.listview.lv-lg .lv-item {
+		padding:10px 25px 10px 25px;
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.listview.lv-lg .lv-item {
+		padding:10px 25px 10px 25px;
 	}
 }
 
