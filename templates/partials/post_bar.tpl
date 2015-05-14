@@ -13,11 +13,11 @@
 	</span>
 
 	<li class="post-count">
-		<span component="topic/post-count" title="{postcount}">{postcount}</span><br />
+		<span component="topic/post-count" class="human-readable-number" title="{postcount}">{postcount}</span><br />
 		<small>[[global:posts]]</small>
 	</li>
 	<li class="view-count">
-		<span title="{viewcount}">{viewcount}</span><br />
+		<span title="{viewcount}" class="human-readable-number">{viewcount}</span><br />
 		<small>[[global:views]]</small>
 	</li>
 

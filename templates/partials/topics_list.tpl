@@ -38,7 +38,7 @@
 
 			<!-- IF !template.category -->
 			<small class="lv-small">
-				<span class="hidden-xs">[[global:posts]] {topics.postcount} | [[global:views]] {topics.viewcount} | </span>
+				<span class="hidden-xs">[[global:posts]] <span class="human-readable-number" title="{topics.postcount}"></span> | [[global:views]] <span class="human-readable-number" title="{topics.viewcount}"></span> | </span>
 				<!-- IF topics.user.userslug -->
 				[[global:posted_in_ago_by, <a href="{config.relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, <strong>{topics.user.username}</strong>]]
 				<!-- ELSE -->
