@@ -1,5 +1,5 @@
 <!-- IF privileges.view_thread_tools -->
-<div class="btn-group thread-tools dropdown dropup">
+<li class="thread-tools dropdown dropup">
 	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
 		<span class="visible-sm-inline visible-md-inline visible-lg-inline">[[topic:thread_tools.title]]</span>
 		<span class="visible-xs-inline"><i class="fa fa-fw fa-gear"></i></span>
@@ -72,5 +72,5 @@
 		<!-- END thread_tools -->
 		<!-- ENDIF privileges.editable -->
 	</ul>
-</div>
+</li>
 <!-- ENDIF privileges.view_thread_tools -->
