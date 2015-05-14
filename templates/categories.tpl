@@ -17,10 +17,10 @@
 				</h2>
 				<ul class="actions">
                     <li>
-                        <i class="fa fa-book"></i><span class="human-readable-number">{categories.topic_count}</span>
+                        <i class="fa fa-book"></i><span class="human-readable-number" title="{categories.topic_count}"></span>
                     </li>
                     <li>
-                        <i class="fa fa-pencil"></i><span class="human-readable-number">{categories.post_count}</span>
+                        <i class="fa fa-pencil"></i><span class="human-readable-number" title="{categories.post_count}"></span>
                     </li>
                 </ul>
             </div>
