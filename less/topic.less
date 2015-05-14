@@ -1,8 +1,4 @@
 .topic {
-	.topic-title {
-		font-size: 15px;
-	}
-
 	.post-tools {
 		text-transform: lowercase;
 		margin: 3px;
@@ -72,6 +68,10 @@
 	opacity: 0.3;
 }
 
+.topic-title {
+	font-size: 15px;
+}
+
 .tools-title {
 	margin-left: 10px;
 	font-size: 11px;
@@ -82,5 +82,11 @@
 		i {
 			color: #2196f3;
 		}
+	}
+}
+
+[component="topic"] {
+	&.lv-item.media {
+		padding-top: 0px;
 	}
 }
