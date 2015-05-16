@@ -29,16 +29,15 @@
 				<!-- BEGIN posts -->				
 				<div component="category/posts" class="content">
 					<div class="pull-left hidden-xs">
-			        	<a href="{config.relative_path}/user/{categories.posts.user.userslug}">
-			            	<img class="user-picture" src="{categories.posts.user.picture}" title="{categories.posts.user.username}">
-			        	</a>
-			    	</div>
+				    	<a href="{config.relative_path}/user/{categories.posts.user.userslug}">
+				        	<img class="user-picture" src="{categories.posts.user.picture}" title="{categories.posts.user.username}">
+				    	</a>
+					</div>
 					<div class="topic-content">
 						<a href="{config.relative_path}/topic/{categories.posts.topic.slug}">{categories.posts.topic.title}</a>
 					</div>
 				</div>
 				<!-- END posts -->
-				
 			</div>
 		</div>
 	</div>
