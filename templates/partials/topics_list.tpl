@@ -14,7 +14,7 @@
 
 		<div class="pull-left hidden-xs">
         	<a href="{config.relative_path}/user/{topics.user.userslug}">
-            	<img class="lv-img-sm" src="{topics.user.picture}" title="{topics.user.username}">
+            	<img class="lv-img" src="{topics.user.picture}" title="{topics.user.username}">
         	</a>
     	</div>
     	<div class="media-body">
