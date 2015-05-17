@@ -10,7 +10,7 @@
 			<div class="lv-body">
 				<!-- BEGIN children -->
 				<div class="lv-item media row clearfix">
-					<div class="pull-left hidden-xs" style="{function.generateCategoryBackground}">
+					<div class="pull-left" style="{function.generateCategoryBackground}">
 			        	<i class="fa fa-fw {children.icon}"></i>
 			    	</div>
 			    	<div class="media-body">
