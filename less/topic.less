@@ -4,12 +4,29 @@
 		margin: 3px;
 		font-size: 12px;
 		padding-left: 10px;
+
+		@media (max-width: @screen-xs-max) {
+			display: block;
+		}
+
+		a {
+			margin-right: 10px;
+		}
+
+		i {
+			margin-right: 2px;
+		}
 	}
 
 	.post-bar {
 		&.timeline.single {
 			padding-bottom: 20px;
 			margin-top: 10px;
+
+			@media (max-width: @screen-xs-max) {
+					padding-right: 10px;
+					margin-bottom: 10px;
+				}
 
 			.frame {
 				margin-left: 50px;
@@ -35,6 +52,13 @@
 			font-size: 16px;
 		}
 	}
+
+	.listview .lv-item .timeline-date .lv-actions {
+		@media (max-width: @screen-xs-max) {
+			right: -10px;
+  			top: 25px;
+		}
+	} 
 }
 
 .browsing-users {
@@ -59,7 +83,6 @@
 .post-tools {
 	a {
 		margin-right: 5px;
-		text-transform: capitalize;
 	}
 
 	i {

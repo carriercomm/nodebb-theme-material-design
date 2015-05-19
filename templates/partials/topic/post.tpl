@@ -19,7 +19,7 @@
                 <a component="post/quote" class="<!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->"><i class="fa fa-quote-left"></i>[[topic:quote]]</a>
             </span>
 
-            <div class="lv-actions actions hidden-xs">
+            <div class="lv-actions actions">
                 <li class="votes">
                     <!-- IF !reputation:disabled -->
                     <a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
@@ -40,7 +40,7 @@
             <p>{posts.content}</p>
         </div>
         <!-- IF posts.user.signature -->
-        <div class="post-signature">{posts.user.signature}</div>
+        <div class="post-signature hidden-xs">{posts.user.signature}</div>
         <!-- ENDIF posts.user.signature -->
 
         <small component="post/editor" class="pull-right post-edit <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->">[[global:last_edited_by_ago, <strong><a href="{config.relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</small>
