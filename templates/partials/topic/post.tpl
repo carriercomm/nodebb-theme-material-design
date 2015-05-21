@@ -1,4 +1,4 @@
-<div component="post" class=" <!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
+<div component="post" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
     <a component="post/anchor" name="{posts.index}"></a>
     <meta itemprop="datePublished" content="{posts.relativeTime}">
     <meta itemprop="dateModified" content="{posts.relativeEditTime}">
