@@ -7,7 +7,7 @@
 	<!-- END tags -->
 </span>
 
-<div class="lv-actions actions post-bar">
+<div class="postbar-actions pull-right">
 	<span class="loading-indicator pull-left" done="0" style="display:none;">
 		<span class="hidden-xs">[[topic:loading_more_posts]]</span> <i class="fa fa-refresh fa-spin"></i>
 	</span>

@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="listview lv-lg">
+				<div class="listview lv-bordered lv-lg">
 					<div class="lv-header-alt" component="post/header" itemprop="name">
 						<div class="title">
 						<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span class="topic-title" component="topic/title">{title}</span>
@@ -32,18 +32,20 @@
 					</div>
 					<div class="lv-body">
 						<div class="lv-item media" component="topic" data-tid="{tid}">
-							<div class="v-timeline vertical-container">
-								<!-- BEGIN posts -->
-								<!-- IMPORT partials/topic/post.tpl -->
-								
-								<!-- IF !posts.index -->
-								<div class="post-bar" data-index="{posts.index}">
-									<!-- IMPORT partials/post_bar.tpl -->
+							<!-- BEGIN posts -->
+							<!-- IMPORT partials/topic/post.tpl -->
+
+							<!-- IF !posts.index -->
+							<div class="post-bar timeline single" data-index="{posts.index}">
+								<div class="frame">
+								<!-- IMPORT partials/post_bar.tpl -->
 								</div>
-								<!-- ENDIF !posts.index -->
-								<!-- END posts -->
-								<div class="post-bar <!-- IF unreplied -->hidden<!-- ENDIF unreplied -->">
-									<!-- IMPORT partials/post_bar.tpl -->
+							</div>
+							<!-- ENDIF !posts.index -->
+							<!-- END posts -->
+							<div class="post-bar timeline single <!-- IF unreplied -->hidden<!-- ENDIF unreplied -->">
+								<div class="frame">
+								<!-- IMPORT partials/post_bar.tpl -->
 								</div>
 							</div>
 						</div>

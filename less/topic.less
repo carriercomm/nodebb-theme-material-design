@@ -18,50 +18,12 @@
 		}
 	}
 
-	.post-bar {
-		&.timeline.single {
-			padding-bottom: 20px;
-			margin-top: 10px;
-
-			@media (max-width: @screen-xs-max) {
-					padding-right: 10px;
-					margin-bottom: 10px;
-				}
-
-			.frame {
-				margin-left: 50px;
-				width: ~"calc(100% - 50px)";
-				@media (max-width: @screen-sm-max) {
-					width: ~"calc(100% - 30px)";
-				}
-			}
-		}
-
-		.lv-actions.actions, .timeline.single .lv-actions.actions {
-			z-index: inherit;
-		}
-
-		.btn.dropdown-toggle {
-			padding: 4px;
-		}
-	}
-
 	.topic-title {
 		font-size: 18px;
 		@media (max-width: @screen-sm-max) {
 			font-size: 16px;
 		}
-	}
-
-	.listview .lv-item .timeline-date .lv-actions {
-		@media (max-width: @screen-xs-max) {
-			right: -10px;
-  			top: 25px;
-		}
-	}
-	.actions>li>span>i {
-		font-size: 16px;
-	}
+	}	
 }
 
 .browsing-users {
@@ -121,5 +83,65 @@
 [component="posts"] {
 	&.card-body.card-padding {
 		padding-top: 0px;
+	}
+}
+
+
+.topic .card {
+	background-color: inherit;
+	box-shadow: none;
+
+	.lv-header-alt {
+		background-color: #fff;
+		border: 1px solid #e4e5e7;
+	}
+
+	.lv-item.media {
+		padding: 0px;
+
+		.post-actions {
+			>li {
+				display: inline-block;
+
+				>a {
+					padding: 0px 5px;
+					color: #666;
+
+					>i {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.post-bar {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			margin-left: 60px;
+
+			.post-count, .view-count {
+				text-align: center;
+				padding: 0px 5px;
+			}
+
+			.postbar-actions {
+				>li, >span {
+					display: inline-block;
+				}
+
+				.reply-button {
+					vertical-align: text-bottom;
+				}
+
+				.thread-tools {
+					vertical-align: text-bottom;
+
+					.dropdown-toggle {
+						border-radius: 2px;
+						padding: 7px;
+					}
+				}
+			}
+		}
 	}
 }

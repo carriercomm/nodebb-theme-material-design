@@ -1,5 +1,5 @@
 <li class="dropdown moderator-tools">
-	<a data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></a>
+	<a data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-ellipsis-v"></i></a>
 	<ul class="dropdown-menu pull-right">
 		<!-- IF posts.display_moderator_tools -->
 		<li class="tools-title">[[topic:tools]]</li>
