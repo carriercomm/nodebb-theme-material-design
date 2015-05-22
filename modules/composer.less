@@ -4,11 +4,15 @@
 html.composing {
 	&.mobile {
 		overflow: hidden;
+
+		.composer {
+			position: absolute;
+			box-shadow: none;
+		}
 	}
 
 	body {
 		height: 0px !important;
-		overflow: hidden;
 	}
 
 	.composer {
@@ -28,6 +32,10 @@ html.composing {
 
 			.title {
 				padding-left: 8px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				width: 100%;
 			}
 		}
 
@@ -39,6 +47,11 @@ html.composing {
 			margin-bottom: 0px;
 			padding-bottom: 0px;
 			font-size: 18px;
+		}
+
+		.write:focus {
+			outline-style: solid;
+			outline-width: 2px;
 		}
 
 		.form-control {
@@ -53,6 +66,7 @@ html.composing {
 		.mobile-navbar {
 			background: @btn-primary-bg;
 			color: @btn-primary-color;
+			position: absolute;
 
 			button {
 				font-size: 20px;
@@ -135,6 +149,7 @@ html.composing {
 	.write-preview-container {
 		height:100%;
 		margin: 0 0;
+		min-height: 200px;
 
 		> div {
 			height:100%;
@@ -143,9 +158,7 @@ html.composing {
 
 	.write {
 		border: 1px solid #EDEDED;
-		-webkit-border-radius: 0px;
-		-moz-border-radius: 0px;
-		border-radius: 0px;
+		.border-radius(0px);
 		.box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.05));
 	}
 
@@ -221,6 +234,8 @@ html.composing {
 		position: absolute;
 		width: 100%;
 		top: 10px;
+		height: 0px;
+		
 		.pointer;
 
 		.trigger {
@@ -234,9 +249,7 @@ html.composing {
 
 			background: #333;
 			border: 1px solid #333;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
-			border-radius: 50%;
+			.border-radius(50%);
 
 			line-height: 26px;
 
@@ -299,7 +312,7 @@ html.composing {
   }
 }
 
-@media (max-width: @screen-xs-max), (max-height: 480px) {
+@media (max-width: 767px), (max-height: 480px) {
 	.composer {
 		width: 100%;
 		background: rgba(224, 224, 224, 1);
@@ -308,36 +321,4 @@ html.composing {
 	.resizer {
 		visibility: hidden;
 	}
-}
-
-.composer-container {
-	.btn-group {
-		box-shadow: none;
-	}
-}
-
-.composer-container .btn.btn-default {
-    box-shadow: none !important;
-
-    &:hover {
-        background-color: #eee;
-    }
-}
-
-.composer-container .btn.btn-primary {
-    box-shadow: none !important;
-    color: #2196f3;
-    background-color: #fff;
-    &:hover {
-        background-color: #eee;
-    }
-}
-
-.composer-container .btn.btn-info {
-    box-shadow: none !important;
-    color: #00bcd4;
-    background-color: #fff;
-    &:hover, &:active, &:focus, &:visited {
-        background-color: #eee;
-    }
 }
