@@ -5,10 +5,6 @@
 		font-size: 12px;
 		padding-left: 10px;
 
-		@media (max-width: @screen-xs-max) {
-			display: block;
-		}
-
 		a {
 			margin-right: 10px;
 		}
@@ -100,6 +96,11 @@
 		padding: 0px;
 
 		.post-actions {
+
+			@media (max-width: @screen-xs-max) {
+				margin-right: -10px;
+			}
+
 			>li {
 				display: inline-block;
 
