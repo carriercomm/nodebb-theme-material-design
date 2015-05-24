@@ -63,7 +63,7 @@
                     <!-- IF topics.unreplied -->
 				<li class="lv-small"><a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a></li>
 				<!-- ELSE -->
-				<li class="lv-small"><a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">{topics.teaser.user.username}</a>
+				<li class="lv-small"><a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->"><img class="user-picture" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"></a>
 				<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 					[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 				</a></li>
