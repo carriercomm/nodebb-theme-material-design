@@ -21,8 +21,12 @@
     		<div class="lv-title" component="topic/header">
     			<strong><i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !topics.pinned -->hide<!-- ENDIF !topics.pinned -->"></i>
 				<i component="topic/locked" class="fa fa-lock <!-- IF !topics.locked -->hide<!-- ENDIF !topics.locked -->"></i></strong>
+				<!-- IF !topics.deleted -->
 				<a href="{config.relative_path}/topic/{topics.slug}"><span class="topic-title">{topics.title}</span>
 				</a>
+				<!-- ELSE -->
+				<span class="topic-title">{topics.title}</span>
+				<!-- ENDIF !topics.deleted -->
 			</div>
 
 			<!-- IF template.category -->
@@ -61,7 +65,7 @@
 			<div class="lv-actions actions hidden-xs">
                 <ul>
                     <!-- IF topics.unreplied -->
-				<li class="lv-small"><a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a></li>
+				<li class="lv-small">[[category:no_replies]]</li>
 				<!-- ELSE -->
 				<li class="lv-small"><a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->"><img class="user-picture" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"></a>
 				<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">

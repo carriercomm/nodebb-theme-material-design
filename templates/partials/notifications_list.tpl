@@ -9,10 +9,10 @@
         <div class="pull-left">
             <!-- IF notifications.image -->
 			<!-- IF notifications.from -->
-			<img class="lv-img" src="{notifications.image}" />
+			<img class="user-picture" src="{notifications.image}" />
 			<!-- ENDIF notifications.from -->
 			<!-- ELSE -->
-			<img class="lv-img" src="{notifications.image}"/>
+			<img class="user-picture" src="{notifications.image}"/>
 			<!-- ENDIF notifications.image -->
         </div>
         <div class="pull-right mark-read" aria-label="Mark Read"></div>
