@@ -25,7 +25,12 @@
 				<a href="{config.relative_path}/topic/{topics.slug}"><span class="topic-title">{topics.title}</span>
 				</a>
 				<!-- ELSE -->
+				<!-- IF privileges.editable -->
+				<a href="{config.relative_path}/topic/{topics.slug}"><span class="topic-title">{topics.title}</span>
+				</a>
+				<!-- ELSE -->
 				<span class="topic-title">{topics.title}</span>
+				<!-- ENDIF privileges.editable -->
 				<!-- ENDIF !topics.deleted -->
 			</div>
 
