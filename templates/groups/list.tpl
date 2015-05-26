@@ -5,7 +5,7 @@
 		<!-- ENDIF allowGroupCreation -->
 	</div>
 	<div class="col-lg-8">
-		<div class="col-xs-3 pull-right form-group">
+		<div class="col-xs-5 pull-right form-group">
 			<div class="fg-line">
 			<select class="form-control" id="search-sort">
 				<option value="alpha">Group Name</option>
@@ -14,7 +14,7 @@
 			</select>
 			</div>
 		</div>
-		<div class="col-xs-5 text-left pull-right">
+		<div class="col-xs-7 text-left pull-right">
 			<div class="input-group">
 				<div class="fg-line">
 				<input type="text" class="form-control" placeholder="Search" name="query" value="" id="search-text">
