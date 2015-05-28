@@ -4,8 +4,10 @@
     <meta itemprop="dateModified" content="{posts.relativeEditTime}">
 
     <div class="vertical-timeline-block">
-        <div class="vertical-timeline-icon">
-            <i class="fa fa-comments-o"></i>
+        <div class="vertical-timeline-icon hidden-xs">
+            <a href="{config.relative_path}/user/{posts.user.userslug}">
+                <img class="user-picture" src="{posts.user.picture}" title="{posts.user.username}">
+            </a>
         </div>
         <div class="vertical-timeline-content">
             <div class="p-sm">
@@ -40,6 +42,12 @@
                 <div class="timeline-content" component="post/content" itemprop="text">
                     <p>{posts.content}</p>
                 </div>
+
+                 <!-- IF posts.user.signature -->
+                <div class="post-signature hidden-xs">{posts.user.signature}</div>
+                <!-- ENDIF posts.user.signature -->
+
+                <small component="post/editor" class="pull-right post-edit <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->">[[global:last_edited_by_ago, <strong><a href="{config.relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</small>
             </div>
             
         </div>

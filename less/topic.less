@@ -12,6 +12,10 @@
 		i {
 			margin-right: 2px;
 		}
+
+		@media (max-width: @screen-xs-max) {
+			display: block;
+		}
 	}
 
 	.topic-title {
@@ -48,9 +52,8 @@
 .post-signature {
 	font-size: 12px;
 	border-top: 1px dashed #ccc;
-	margin-top: 10px;
-	margin-left: 50px;
-	padding-top: 3px;
+	width: 70%;
+	margin-top: 30px;
 
 	p {
 		margin-bottom: 10px;
@@ -112,6 +115,10 @@
 					padding: 0px 5px;
 					color: #666;
 
+					@media (max-width: @screen-xs-max) {
+						padding: 0 2px;
+					}
+
 					>i {
 						font-size: 16px;
 					}
@@ -125,6 +132,17 @@
 			a {
 				cursor: default;
 			}
+		}
+
+		.user-picture {
+			width: 40px;
+			height: 40px;
+			border-radius: 2px;
+		}
+
+		.post-edit {
+			position: relative;
+			top: -5px;
 		}
 
 		.post-bar {
