@@ -1,17 +1,17 @@
 .users-container {
     padding: 0;
-}
 
-.users-container .users-box {
-    display: inline-block;
-    margin-top: 20px;
-    text-align: center;
-    vertical-align: top;
-    width: 100px;
-}
+    .users-box {
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+        vertical-align: top;
+        width: 100px;
 
-.users-container .users-box .user-picture {
-    width: 80px;
+        .user-picture {
+            width: 80px;
+        }
+    }
 }
 
 #user_label .user-picture {
@@ -23,11 +23,20 @@
   	border-radius: 50%;
 }
 
-.users .users-box .user-info {
-  	font-size: 13px;
-}
+.users {
+    .users-box .user-info {
+  	     font-size: 13px;
+     }
 
-.users .input-group-addon.label-success {
-    background-color: #4caf50;
-    vertical-align: middle;
+     .input-group-addon
+        &.label-success {
+            background-color: #4caf50;
+            vertical-align: middle;
+        }
+
+        &.label-warning {
+            background-color: #ff9800;
+            vertical-align: middle;
+        }
+    }
 }
