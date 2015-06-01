@@ -3,14 +3,14 @@
     <meta itemprop="datePublished" content="{posts.relativeTime}">
     <meta itemprop="dateModified" content="{posts.relativeEditTime}">
 
-    <div class="vertical-timeline-block">
-        <div class="vertical-timeline-icon hidden-xs">
+    <div class="post-block">
+        <div class="poster-avatar hidden-xs">
             <a href="{config.relative_path}/user/{posts.user.userslug}">
                 <img class="user-picture" src="{posts.user.picture}" title="{posts.user.username}">
             </a>
         </div>
-        <div class="vertical-timeline-content">
-            <div class="p-sm">
+        <div class="post-content">
+            <div class="post-body">
                 <div class="post-actions pull-right">
                     <li class="votes">
                         <!-- IF !reputation:disabled -->
@@ -39,7 +39,7 @@
                 <a component="post/reply" class="<!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->"><i class="fa fa-reply"></i>[[topic:reply]]</a>
                 <a component="post/quote" class="<!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->"><i class="fa fa-quote-left"></i>[[topic:quote]]</a>
             </span></span>
-                <div class="timeline-content" component="post/content" itemprop="text">
+                <div component="post/content" itemprop="text">
                     <p>{posts.content}</p>
                 </div>
 

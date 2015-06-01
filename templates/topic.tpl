@@ -30,23 +30,21 @@
 						</ul>
 						</div>
 					</div>
-					<div class="lv-body">
-						<div class="lv-item media" component="topic" data-tid="{tid}">
-							<div class="v-timeline vertical-container">
-								<!-- BEGIN posts -->
-								<!-- IMPORT partials/topic/post.tpl -->
-								
-								<!-- IF !posts.index -->
-								<div class="post-bar" data-index="{posts.index}">
-									<!-- IMPORT partials/post_bar.tpl -->
-								</div>
-								<!-- ENDIF !posts.index -->
-								<!-- END posts -->
-								<div class="post-bar <!-- IF unreplied -->hidden<!-- ENDIF unreplied -->">
-									<!-- IMPORT partials/post_bar.tpl -->
-								</div>
+					<div class="lv-body" component="topic" data-tid="{tid}">
+						
+							<!-- BEGIN posts -->
+							<!-- IMPORT partials/topic/post.tpl -->
+							
+							<!-- IF !posts.index -->
+							<div class="post-bar" data-index="{posts.index}">
+								<!-- IMPORT partials/post_bar.tpl -->
 							</div>
-						</div>
+							<!-- ENDIF !posts.index -->
+							<!-- END posts -->
+							<div class="post-bar <!-- IF unreplied -->hidden<!-- ENDIF unreplied -->">
+								<!-- IMPORT partials/post_bar.tpl -->
+							</div>
+						
 					</div>
 				</div>
 			</div>
