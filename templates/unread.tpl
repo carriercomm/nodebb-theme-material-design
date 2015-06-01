@@ -37,8 +37,6 @@
 					<strong>[[unread:no_unread_topics]]</strong>
 				</div>
 			</div>
-
 		</div>
 	</div>
-
 </div>
